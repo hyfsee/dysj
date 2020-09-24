@@ -20,31 +20,31 @@ export default {
       tab: [
         {
           id: 0,
-          icon: "home-o",
+          icon: "apps-o",
           name: "首页",
           path: "",
         },
         {
           id: 1,
-          icon: "home-o",
+          icon: "video-o",
           name: "直播监控",
           path: "ranking",
         },
         {
           id: 2,
-          icon: "home-o",
+          icon: "bar-chart-o",
           name: "排行榜",
           path: "hotlist",
         },
         {
           id: 3,
-          icon: "home-o",
+          icon: "fire-o",
           name: "热门",
           path: "hot",
         },
         {
           id: 4,
-          icon: "home-o",
+          icon: "user-o",
           name: "我的",
           path: "personage",
         },

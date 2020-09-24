@@ -2,7 +2,7 @@
   <div class="top">
     <div class="top-top">
       <van-icon @click="showClick" v-if="!show" name="arrow-left" />
-      飞瓜数据-{{data}}
+      鼎音数据-{{data}}
     </div>
     <div class="top-icon">
       <van-icon style="margin-right:0.625rem" name="apps-o" />

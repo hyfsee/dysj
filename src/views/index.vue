@@ -1,4 +1,4 @@
-0<template>
+<template>
   <div id="app">
     <!-- 搜索框 -->
     <Search :data="placeholder" />
@@ -151,7 +151,7 @@ export default {
         {
           id: 3,
           img: "https://img.yzcdn.cn/vant/apple-3.jpg",
-          name: "我的抖音号",
+          name: "我的抖音",
           color: "green",
           icon: "label",
           url: "/personage",

@@ -1,11 +1,13 @@
 <template>
-  <div class="top">
+  <div
+    class="top"
+  >
     <div class="top-top">
       <van-icon @click="showClick" v-if="!show" name="arrow-left" />
-      鼎音数据-{{data}}
+      飞瓜数据-{{ data }}
     </div>
     <div class="top-icon">
-      <van-icon style="margin-right:0.625rem" name="apps-o" />
+      <van-icon style="margin-right: 0.625rem" name="apps-o" />
       <van-icon name="clear" />
     </div>
   </div>
@@ -14,6 +16,10 @@
 <script>
 export default {
   props: ["data", "show"],
+  data() {
+    return {
+    };
+  },
   methods: {
     showClick() {
       this.$router.go(-1);
@@ -32,9 +38,10 @@ export default {
   color: white;
   align-items: center;
   padding: 0.625rem;
-  height: 40px;
+  height: 2.5rem;
   width: 100%;
   position: fixed;
+  right: 0;
   z-index: 99;
   &-top {
     display: flex;

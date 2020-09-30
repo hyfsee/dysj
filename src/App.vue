@@ -1,11 +1,32 @@
 <template>
-  <div>
+  <div
+    class="app"
+    :style="{
+      'background-color': this.$store.state.bgcColor.background,
+      color: this.$store.state.bgcColor.color,
+    }"
+  >
     <!-- top -->
-    <Top @ifShow="ifShow" :show="show" :data="name" />
+    <Top
+      @ifShow="ifShow"
+      :show="show"
+      :data="name"
+      :style="{
+        'background-color': this.$store.state.topColor.background,
+        color: this.$store.state.topColor.color,
+      }"
+    />
     <!-- 固定定位占位符 -->
-    <div style="height:2.5rem"></div>
-    <router-view class="app"></router-view>
-    <Footer v-if="show" @name="setName" />
+    <div style="height: 2.5rem"></div>
+    <router-view></router-view>
+    <Footer
+      :style="{
+        'background-color': this.$store.state.btmColor.background,
+        color: this.$store.state.btmColor.color,
+      }"
+      v-if="show"
+      @name="setName"
+    />
   </div>
 </template>
 
@@ -40,6 +61,14 @@ export default {
       if (to === "/RankingHistory") {
         this.show = false;
         this.name = "监控历史";
+      }
+      if (to === "/motif") {
+        this.show = false;
+        this.name = "主题设置";
+      }
+      if (to === "/") {
+        this.show = true;
+        this.name = "首页";
       }
     },
   },

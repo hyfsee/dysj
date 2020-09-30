@@ -30,6 +30,12 @@
         </div>
         <van-icon name="arrow" />
       </div>
+      <router-link to="/motif" class="personage-bottom-item">
+        <div>
+          <van-icon name="todo-list" />主题设置
+        </div>
+        <van-icon name="arrow" />
+      </router-link>
     </div>
   </div>
 </template>
@@ -61,7 +67,6 @@ export default {
   }
   &-img {
     padding: 0.625rem 0;
-    background-color: #222;
     width: 23.4375rem;
     position: relative;
     right: 0.625rem;

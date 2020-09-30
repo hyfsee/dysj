@@ -151,7 +151,7 @@ export default {
         {
           id: 3,
           img: "https://img.yzcdn.cn/vant/apple-3.jpg",
-          name: "我的抖音",
+          name: "我的抖音号",
           color: "green",
           icon: "label",
           url: "/personage",
@@ -184,7 +184,9 @@ export default {
       });
     },
   },
-  watch: {},
+  mounted(){
+    
+  }
 };
 </script>
 
@@ -234,7 +236,6 @@ export default {
       align-items: center;
     }
   }
-  
   &-bottom {
     display: flex;
     width: 100%;
@@ -304,7 +305,7 @@ export default {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         color: white;
         &-color {
           color: #999;

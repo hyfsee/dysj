@@ -79,6 +79,9 @@ const routes = [
     {
         path: '/RankingHistory',
         component: () => import('@/views/RankingHistory')
+    }, {
+        path: '/motif',
+        component: () => import('@/views/motif')
     }
 ]
 

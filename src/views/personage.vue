@@ -2,38 +2,33 @@
   <div class="personage">
     <div class="personage-top">会员到期时间:{{}}</div>
     <div class="personage-img">
-      <van-image round width="5rem" height="5rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <van-image
+        round
+        width="5rem"
+        height="5rem"
+        src="https://img.yzcdn.cn/vant/cat.jpeg"
+      />
       <div>账户ID:</div>
     </div>
     <div class="personage-bottom">
       <router-link to="/MyRanking" class="personage-bottom-item">
-        <div>
-          <van-icon name="friends" />我的抖音号
-        </div>
+        <div><van-icon name="friends" />我的抖音号</div>
         <van-icon name="arrow" />
       </router-link>
       <router-link to="/RankingHistory" class="personage-bottom-item">
-        <div>
-          <van-icon name="clock" />播控历史
-        </div>
+        <div><van-icon name="clock" />播控历史</div>
         <van-icon name="arrow" />
       </router-link>
       <div class="personage-bottom-item">
-        <div>
-          <van-icon name="star" />我的收藏
-        </div>
+        <div><van-icon name="star" />我的收藏</div>
         <van-icon name="arrow" />
       </div>
       <div class="personage-bottom-item">
-        <div>
-          <van-icon name="gold-coin" />抖音号估值
-        </div>
+        <div><van-icon name="gold-coin" />抖音号估值</div>
         <van-icon name="arrow" />
       </div>
       <router-link to="/motif" class="personage-bottom-item">
-        <div>
-          <van-icon name="todo-list" />主题设置
-        </div>
+        <div><van-icon name="todo-list" />主题设置</div>
         <van-icon name="arrow" />
       </router-link>
     </div>
@@ -59,18 +54,14 @@ export default {
   &-top {
     font-size: 12px;
     color: #888;
-    padding: 0.3125rem;
     background-color: #555;
-    width: 23.4375rem;
-    position: relative;
-    right: 0.625rem;
+    width: 100%;
+    padding: 0.3125rem 0;
   }
   &-img {
     padding: 0.625rem 0;
-    width: 23.4375rem;
-    position: relative;
-    right: 0.625rem;
     font-size: 12px;
+    width: 100%;
   }
   &-bottom {
     display: flex;

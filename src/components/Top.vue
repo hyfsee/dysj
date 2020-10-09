@@ -1,9 +1,7 @@
 <template>
-  <div
-    class="top"
-  >
+  <div class="top">
     <div class="top-top">
-      <van-icon @click="showClick" v-if="!show" name="arrow-left" />
+      <van-icon @click="showClick" v-if="!fotShow" name="arrow-left" />
       飞瓜数据-{{ data }}
     </div>
     <div class="top-icon">
@@ -15,10 +13,9 @@
 
 <script>
 export default {
-  props: ["data", "show"],
+  props: ["data", "fotShow"],
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     showClick() {

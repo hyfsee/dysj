@@ -8,7 +8,8 @@
       replace
       :icon="item.icon"
       :to="'/' + item.path"
-    >{{ item.name }}</van-tabbar-item>
+      >{{ item.name }}</van-tabbar-item
+    >
   </van-tabbar>
 </template>
 
@@ -27,20 +28,20 @@ export default {
         {
           id: 1,
           icon: "home-o",
-          name: "直播监控",
-          path: "ranking",
+          name: "播主",
+          path: "podcast",
         },
         {
           id: 2,
           icon: "home-o",
-          name: "排行榜",
-          path: "hotlist",
+          name: "商品",
+          path: "commodity",
         },
         {
           id: 3,
           icon: "home-o",
-          name: "热门",
-          path: "hot",
+          name: "直播",
+          path: "streaming",
         },
         {
           id: 4,

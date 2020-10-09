@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- 搜索框 -->
-    <Search :data="placeholder" />
+    <Search :content="content" />
 
     <!-- 轮播图 -->
     <van-swipe class="swipe" :autoplay="3000">
@@ -14,7 +14,7 @@
     <van-grid square :gutter="10">
       <van-grid-item
         :to="item.url"
-        :style="{color:item.color}"
+        :style="{ color: item.color }"
         v-for="item in gridNav"
         :key="item.id"
         :icon="item.icon"
@@ -76,11 +76,11 @@
       </div>
       <div class="rankinglist-bottom">
         <div class="rankinglist-bottom-list">
-          <em style="color:orange;font-weight:700;font-size:1rem">01</em>
+          <em style="color: orange; font-weight: 700; font-size: 1rem">01</em>
           <img src alt />
           <div class="rankinglist-bottom-list-nav">
             <div>布沙发极简组合简约北欧</div>
-            <div style="color:orange">￥7280.0</div>
+            <div style="color: orange">￥7280.0</div>
             <div class="rankinglist-bottom-list-nav-color">
               <div>浏览量增量：27.4W</div>
               <div>销售增量：1518</div>
@@ -88,11 +88,11 @@
           </div>
         </div>
         <div class="rankinglist-bottom-list">
-          <em style="color:orange;font-weight:700;font-size:1rem">01</em>
+          <em style="color: orange; font-weight: 700; font-size: 1rem">01</em>
           <img src alt />
           <div class="rankinglist-bottom-list-nav">
             <div>布沙发极简组合简约北欧</div>
-            <div style="color:orange">￥7280.0</div>
+            <div style="color: orange">￥7280.0</div>
             <div class="rankinglist-bottom-list-nav-color">
               <div>浏览量增量：27.4W</div>
               <div>销售增量：1518</div>
@@ -100,11 +100,11 @@
           </div>
         </div>
         <div class="rankinglist-bottom-list">
-          <em style="color:orange;font-weight:700;font-size:1rem">01</em>
+          <em style="color: orange; font-weight: 700; font-size: 1rem">01</em>
           <img src alt />
           <div class="rankinglist-bottom-list-nav">
             <div>布沙发极简组合简约北欧</div>
-            <div style="color:orange">￥7280.0</div>
+            <div style="color: orange">￥7280.0</div>
             <div class="rankinglist-bottom-list-nav-color">
               <div>浏览量增量：27.4W</div>
               <div>销售增量：1518</div>
@@ -117,7 +117,6 @@
 </template>
 <script>
 import Search from "../components/Search";
-
 export default {
   components: {
     Search,
@@ -165,8 +164,7 @@ export default {
           url: "/ranking",
         },
       ],
-      //传给搜索框的数据
-      placeholder: "搜索播主、视频、音乐",
+      content: "搜索的达人或抖音号或商品",
     };
   },
   methods: {
@@ -184,9 +182,7 @@ export default {
       });
     },
   },
-  mounted(){
-    
-  }
+  mounted() {},
 };
 </script>
 

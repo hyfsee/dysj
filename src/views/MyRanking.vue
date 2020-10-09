@@ -4,25 +4,29 @@
       <div class="myranking-top-left">
         <div
           @click="addActive(index)"
-          :class="{active:active==index}"
+          :class="{ active: active == index }"
           class="myranking-top-left-item"
-          v-for="(item,index) in nav"
+          v-for="(item, index) in nav"
           :key="index"
-        >{{item}}</div>
+        >
+          {{ item }}
+        </div>
       </div>
       <div class="myranking-top-right" @click="iconClick">
         <div class="myranking-top-right-top">
-          {{time[showActive]}}
+          {{ time[showActive] }}
           <van-icon v-if="show" name="arrow-down" />
           <van-icon v-if="!show" name="arrow-up" />
         </div>
         <div v-if="!show" class="myranking-top-right-bottom">
           <div
             @click="showClick(index)"
-            :class="{active:showActive===index}"
-            v-for="(item,index) in time"
+            :class="{ active: showActive === index }"
+            v-for="(item, index) in time"
             :key="index"
-          >{{item}}</div>
+          >
+            {{ item }}
+          </div>
         </div>
       </div>
     </div>
@@ -68,7 +72,7 @@ export default {
     display: flex;
     color: #999;
     background-color: #111;
-    width: 23.4375rem;
+    width: calc(100% + 20px);
     justify-content: space-between;
     padding: 0 0.625rem;
     &-left {

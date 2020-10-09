@@ -13,58 +13,20 @@ const routes = [
         // 除了首页之外的页面都可以用懒加载,@符号代表的src这个目录
         component: () => import("@/views/index")
     },
-    //直播监控
+    //播主
     {
-        path: '/ranking',
-        component: () => import("@/views/ranking")
+        path: '/podcast',
+        component: () => import("@/views/podcast")
     },
-    //排行榜
+    //商品
     {
-        path: '/hotlist',
-        component: () => import("@/views/hotlist"),
-        children: [
-            {
-                path: 'hotlist0',
-                component: () => import('@/views/hotlistClassify/hotlist0')
-            },
-            {
-                path: 'hotlist1',
-                component: () => import('@/views/hotlistClassify/hotlist1')
-            },
-            {
-                path: 'hotlist2',
-                component: () => import('@/views/hotlistClassify/hotlist2')
-            },
-            {
-                path: 'hotlist3',
-                component: () => import('@/views/hotlistClassify/hotlist3')
-            },
-            {
-                path: 'hotlist4',
-                component: () => import('@/views/hotlistClassify/hotlist4')
-            }
-        ],
-        redirect: '/hotlist/hotlist0'
+        path: '/commodity',
+        component: () => import("@/views/commodity")
     },
-    //热门
+    //直播
     {
-        path: '/hot',
-        component: () => import('@/views/hot'),
-        children: [
-            {
-                path: 'hot0',
-                component: () => import('@/views/hotClassify/hot0')
-            },
-            {
-                path: 'hot1',
-                component: () => import('@/views/hotClassify/hot1')
-            },
-            {
-                path: 'hot2',
-                component: () => import('@/views/hotClassify/hot2')
-            },
-        ],
-        redirect: 'hot/hot0'
+        path: '/streaming',
+        component: () => import("@/views/streaming")
     },
     //我的
     {
@@ -83,6 +45,14 @@ const routes = [
     }, {
         path: '/motif',
         component: () => import('@/views/motif')
+    },
+    {
+        path: '/login',
+        component: () => import('@/views/login')
+    },
+    {
+        path: '/search',
+        component: () => import('@/views/search')
     }
 ]
 

@@ -9,7 +9,8 @@
     <!-- top -->
     <Top
       @ifShow="ifShow"
-      :show="show"
+      v-if="topShow"
+      :fotShow="fotShow"
       :data="name"
       :style="{
         'background-color': this.$store.state.topColor.background,
@@ -18,13 +19,17 @@
     />
     <!-- 固定定位占位符 -->
     <div style="height: 2.5rem"></div>
+
+    <!-- 内容渲染 -->
     <router-view></router-view>
+
+    <!-- footer -->
     <Footer
       :style="{
         'background-color': this.$store.state.btmColor.background,
         color: this.$store.state.btmColor.color,
       }"
-      v-if="show"
+      v-if="fotShow"
       @name="setName"
     />
   </div>
@@ -41,7 +46,8 @@ export default {
   data() {
     return {
       name: "首页",
-      show: true,
+      fotShow: true,
+      topShow: true,
     };
   },
   methods: {
@@ -49,26 +55,35 @@ export default {
       this.name = e;
     },
     ifShow(e) {
-      this.show = e;
+      this.fotShow = e;
     },
   },
   watch: {
     "$route.path"(to) {
       if (to === "/MyRanking") {
-        this.show = false;
+        this.fotShow = false;
         this.name = "监控";
       }
       if (to === "/RankingHistory") {
-        this.show = false;
+        this.fotShow = false;
         this.name = "监控历史";
       }
       if (to === "/motif") {
-        this.show = false;
+        this.fotShow = false;
         this.name = "主题设置";
       }
       if (to === "/") {
-        this.show = true;
+        this.fotShow = true;
+        this.topShow = true;
         this.name = "首页";
+      }
+      if (to === "/login") {
+        this.fotShow = false;
+        this.topShow = false;
+      }
+      if (to === "/search") {
+        this.fotShow = false;
+        this.name = "搜索";
       }
     },
   },

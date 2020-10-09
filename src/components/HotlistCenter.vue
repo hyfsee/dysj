@@ -18,20 +18,17 @@
         >{{item}}</span>
       </div>
     </div>
-    <div v-if="actives==0" class="hotlist-center-right">{{ center[active] }}</div>
-    <div v-if="actives==1" class="hotlist-center-right">{{ center[0] }}</div>
+    <div class="hotlist-center-right">{{center}}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["center", "active"],
+  props:['listDay','center'],
   data() {
     return {
       //判断下拉按钮是否显示隐藏分类
       removeClick: true,
-      //日周月下拉框数据
-      listDay: ["日榜", "周榜", "月榜"],
       //日周月下拉框选中的index,添加高亮
       listIndex: 0,
       //判断日周月是否隐藏 并且用这个判断点击的icon

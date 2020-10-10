@@ -3,7 +3,9 @@
     <Search :content="content" />
     <Tab :tab="tab" />
     <HotlistCenter :listDay="listDay" :center="center" />
-    <PodcasterClassify :data="industrial" />
+    <router-link to="/podcastParticulars">
+      <PodcasterClassify :data="industrial" />
+    </router-link>
   </div>
 </template>
 

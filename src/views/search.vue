@@ -33,11 +33,26 @@
         </div>
       </div>
     </div>
+    <Tab :tab="tab" />
+    <div class="nav">
+      <div class="nav-item">
+        <div class="nav-item-left">
+          <div class="nav-item-style">1</div>
+          <div class="nav-item-img">img</div>
+          <div class="nav-item-txt">央视新闻</div>
+        </div>
+        <div class="nav-item-right">粉丝数:9733.1w</div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Tab from "../components/Tab";
 export default {
+  components: {
+    Tab,
+  },
   data() {
     return {
       searchText: "",
@@ -56,6 +71,7 @@ export default {
         "陈赫",
         "陈赫",
       ],
+      tab: ["热推播主", "热推商品", "热推直播", "热推视频", "热推店铺"],
     };
   },
   methods: {
@@ -148,6 +164,32 @@ export default {
     color: white;
     line-height: 1.25rem;
     border-radius: 0 1.25rem 1.25rem 0;
+  }
+}
+.nav {
+  margin-top: 20px;
+  &-item {
+    padding: 10px 10px;
+    color: black;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left {
+      display: flex;
+      align-items: center;
+      .nav-item-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        margin: 0 5px;
+        background-color: red;
+      }
+    }
+    &-right {
+      font-size: 14px;
+      color: #555;
+    }
   }
 }
 </style>

@@ -12,19 +12,22 @@
       <div v-if="listDayIcon" class="hotlist-center-left-bottom">
         <span
           @click="listDayAddClick(index)"
-          :class="{active:listIndex==index}"
-          v-for="(item,index) in listDay"
+          :class="{ active: listIndex == index }"
+          v-for="(item, index) in listDay"
           :key="index"
-        >{{item}}</span>
+          >{{ item }}</span
+        >
       </div>
     </div>
-    <div class="hotlist-center-right">{{center}}</div>
+    <div class="hotlist-center-right">
+      {{ center }} <van-icon name="arrow-down" />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props:['listDay','center'],
+  props: ["listDay", "center"],
   data() {
     return {
       //判断下拉按钮是否显示隐藏分类
@@ -101,6 +104,10 @@ export default {
         border: 0;
       }
     }
+  }
+  &-right {
+    display: flex;
+    align-items: center;
   }
 }
 .active {

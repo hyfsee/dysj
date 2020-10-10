@@ -53,7 +53,7 @@ export default {
     &-right {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       font-size: 12px;
       color: #777;
       .item-top {

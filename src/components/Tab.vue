@@ -6,8 +6,7 @@
     title-active-color="white"
     v-model="active"
   >
-    <van-tab v-for="(item, index) in tab" :key="index" :title="item">
-    </van-tab>
+    <van-tab v-for="(item, index) in tab" :key="index" :title="item"> </van-tab>
   </van-tabs>
 </template>
 
@@ -18,23 +17,13 @@ export default {
     return {
       //tab栏,选中的index
       active: 0,
-      
     };
   },
 };
 </script>
 
 <style lang='less' scoped>
-.list {
-  display: flex;
-  justify-content: space-between;
-  &-left {
-    display: flex;
-    align-items: center;
-  }
-  &-right {
-    display: flex;
-    align-items: center;
-  }
+.van-tabs {
+  width: 100%;
 }
 </style>

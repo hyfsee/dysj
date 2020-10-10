@@ -49,9 +49,30 @@ const routes = [
         path: '/login',
         component: () => import('@/views/login')
     },
+    //搜索页面
     {
         path: '/search',
         component: () => import('@/views/search')
+    },
+    //直播详情
+    {
+        path: '/streamingParticulars',
+        component: () => import('@/views/streamingParticulars')
+    },
+    //播主详情
+    {
+        path: '/podcastParticulars',
+        component: () => import('@/views/podcastParticulars')
+    },
+    //视频详情
+    {
+        path: '/videoParticulars',
+        component: () => import('@/views/videoParticulars')
+    },
+    //商品详情
+    {
+        path: '/commodityParticulars',
+        component: () => import('@/views/commodityParticulars')
     }
 ]
 

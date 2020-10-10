@@ -2,7 +2,11 @@
   <div>
     <Search :content="content" />
     <Tab :tab="tab" />
-    <PodcasterClassify :data="industrial" />
+    <HotlistCenter :listDay="listDay" :center="center" />
+
+    <router-link to="/commodityParticulars">
+      <PodcasterClassify :data="industrial"
+    /></router-link>
   </div>
 </template>
 
@@ -10,11 +14,13 @@
 import Search from "../components/Search";
 import Tab from "../components/Tab";
 import PodcasterClassify from "../components/PodcasterClassify";
+import HotlistCenter from "../components/HotlistCenter";
 export default {
   components: {
     Search,
     Tab,
     PodcasterClassify,
+    HotlistCenter,
   },
   data() {
     return {
@@ -27,6 +33,8 @@ export default {
         praise: "114.3w",
         exponent: "1666.4",
       },
+      listDay: ["日榜", "周榜", "月榜"],
+      center: "筛选",
     };
   },
 };

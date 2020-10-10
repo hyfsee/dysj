@@ -1,4 +1,5 @@
 <template>
+  <!-- 直播详情 -->
   <div>
     <div class="top">
       <div class="top-left">img</div>

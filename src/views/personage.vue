@@ -1,4 +1,5 @@
 <template>
+  <!-- 个人中心页面 -->
   <div class="personage">
     <div class="personage-top">会员到期时间:{{}}</div>
     <div class="personage-img">
@@ -23,6 +24,10 @@
         <div><van-icon name="star" />我的收藏</div>
         <van-icon name="arrow" />
       </div>
+      <router-link to="/originality" class="personage-bottom-item">
+        <div><van-icon name="thumb-circle" />创意素材</div>
+        <van-icon name="arrow" />
+      </router-link>
       <div class="personage-bottom-item">
         <div><van-icon name="gold-coin" />抖音号估值</div>
         <van-icon name="arrow" />

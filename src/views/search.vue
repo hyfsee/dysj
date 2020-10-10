@@ -1,4 +1,5 @@
 <template>
+<!-- 搜索页面 -->
   <div>
     <div class="search">
       <div class="search-icon">

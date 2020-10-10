@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 商品详情 -->
     <div class="top">
       <div class="top-left">img</div>
       <div class="top-right">

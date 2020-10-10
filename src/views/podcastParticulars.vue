@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 播主详情 -->
     <div class="top">
       <div class="top-left">
         <div class="top-left-img">img</div>

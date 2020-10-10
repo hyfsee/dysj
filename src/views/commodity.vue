@@ -1,9 +1,9 @@
 <template>
   <div>
+    <!-- 商品页面 -->
     <Search :content="content" />
     <Tab :tab="tab" />
     <HotlistCenter :listDay="listDay" :center="center" />
-
     <router-link to="/commodityParticulars">
       <PodcasterClassify :data="industrial"
     /></router-link>

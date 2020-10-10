@@ -37,11 +37,17 @@ const routes = [
         path: '/MyRanking',
         component: () => import('@/views/MyRanking')
     },
+    //创意素材
+    {
+        path: '/originality',
+        component: () => import('@/views/originality')
+    },
     //监控历史
     {
         path: '/RankingHistory',
         component: () => import('@/views/RankingHistory')
-    }, {
+    },
+    {
         path: '/motif',
         component: () => import('@/views/motif')
     },

@@ -28,10 +28,10 @@
         <div><van-icon name="thumb-circle" />创意素材</div>
         <van-icon name="arrow" />
       </router-link>
-      <div class="personage-bottom-item">
+      <router-link to='/price' class="personage-bottom-item">
         <div><van-icon name="gold-coin" />抖音号估值</div>
         <van-icon name="arrow" />
-      </div>
+      </router-link>
       <router-link to="/motif" class="personage-bottom-item">
         <div><van-icon name="todo-list" />主题设置</div>
         <van-icon name="arrow" />

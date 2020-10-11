@@ -6,35 +6,49 @@
     <div class="center">
       <div class="center-top">
         <div class="center-top-left">
-          <div>全部分类<van-icon name="arrow-down" /></div>
-          <div>24小时<van-icon name="arrow-down" /></div>
-          <div>综合排序<van-icon name="arrow-down" /></div>
+          <div>
+            全部分类
+            <van-icon name="arrow-down" />
+          </div>
+          <div>
+            24小时
+            <van-icon name="arrow-down" />
+          </div>
+          <div>
+            综合排序
+            <van-icon name="arrow-down" />
+          </div>
         </div>
-        <div class="center-top-right"><van-icon name="filter-o" />筛选</div>
+        <div class="center-top-right">
+          <van-icon name="filter-o" />筛选
+        </div>
       </div>
-      <div class="podacster">
+      <router-link to="/videoParticulars" class="podacster">
         <div class="podacster-left">img</div>
         <div class="podacster-right">
-          <div class="podacster-right-top">
-            抖音发短视频就可以赚可以赚钱,认真钱,认真看完
-          </div>
+          <div class="podacster-right-top">抖音发短视频就可以赚可以赚钱,认真钱,认真看完</div>
           <div class="podacster-right-center">
             <div class="podacster-right-center-left">
-              <div class="podacster-right-center-left-img">img</div>
-              无就像
+              <div class="podacster-right-center-left-img">img</div>无就像
             </div>
             <div class="podacster-right-center-right">17小时前</div>
           </div>
           <div class="podacster-right-bottom">
-            <div><van-icon name="good-job-o" />52.5w</div>
-            <div><van-icon name="more-o" />2.0w</div>
-            <div><van-icon name="share-o" />11.3w</div>
+            <div>
+              <van-icon name="good-job-o" />52.5w
+            </div>
+            <div>
+              <van-icon name="more-o" />2.0w
+            </div>
+            <div>
+              <van-icon name="share-o" />11.3w
+            </div>
           </div>
         </div>
-      </div>
+      </router-link>
     </div>
 
-    <div class="music">
+    <router-link to="/musicParticulars" class="music">
       <div class="music-item">
         <div class="music-item-left">img</div>
         <div class="music-item-right">
@@ -43,30 +57,27 @@
           <div class="music-item-right-bottom">参与人数:362.8w</div>
         </div>
       </div>
-    </div>
+    </router-link>
 
     <div class="topic">
-      <div class="topic-item">
+      <router-link to="/wordParticulars" class="topic-item">
         <div class="topic-item-left">
-          <van-icon name="orders-o" />
-          我的生活日记
+          <van-icon name="orders-o" />我的生活日记
         </div>
         <div class="topic-item-right">525.0w参加</div>
-      </div>
-      <div class="topic-item">
+      </router-link>
+      <router-link to="/wordParticulars" class="topic-item">
         <div class="topic-item-left">
-          <van-icon name="orders-o" />
-          我的生活日记
+          <van-icon name="orders-o" />我的生活日记
         </div>
         <div class="topic-item-right">525.0w参加</div>
-      </div>
-      <div class="topic-item">
+      </router-link>
+      <router-link to="/wordParticulars" class="topic-item">
         <div class="topic-item-left">
-          <van-icon name="orders-o" />
-          我的生活日记
+          <van-icon name="orders-o" />我的生活日记
         </div>
         <div class="topic-item-right">525.0w参加</div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -77,14 +88,14 @@ import Search from "../components/Search";
 export default {
   components: {
     Tab,
-    Search,
+    Search
   },
   data() {
     return {
       tab: ["视频", "音乐", "话题"],
-      content: "输入你要找的热门视频吧",
+      content: "输入你要找的热门视频吧"
     };
-  },
+  }
 };
 </script>
 

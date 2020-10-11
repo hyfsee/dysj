@@ -79,7 +79,27 @@ const routes = [
     {
         path: '/commodityParticulars',
         component: () => import('@/views/commodityParticulars')
-    }
+    },
+    //音乐详情
+    {
+        path: '/musicParticulars',
+        component: () => import('@/views/musicParticulars')
+    },
+    //话题详情
+    {
+        path: '/wordParticulars',
+        component: () => import('@/views/wordParticulars')
+    },
+    // 直播监控
+    {
+        path: '/ranking',
+        component: () => import('@/views/ranking')
+    },
+    // 抖音号估值
+    {
+        path: '/price',
+        component: () => import('@/views/price')
+    },
 ]
 
 const originalPush = VueRouter.prototype.push

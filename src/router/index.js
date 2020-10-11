@@ -90,6 +90,22 @@ const routes = [
         path: '/wordParticulars',
         component: () => import('@/views/wordParticulars')
     },
+    //个人中心详情
+    {
+        path: '/personalParticulars',
+        component: () => import('@/views/personalParticulars')
+    },
+    //绑定手机号
+    {
+        path: '/phone',
+        component: () => import('@/views/phone')
+    },
+    //设置密码
+   {
+    path: '/password',
+    component: () => import('@/views/password')
+},
+
     // 直播监控
     {
         path: '/ranking',

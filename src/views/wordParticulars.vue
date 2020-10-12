@@ -19,7 +19,7 @@
         <div class="distribution-top-left">参与人数行业分布</div>
         <div class="distribution-top-right">
           生活
-          <div style="color:green;margin-left:5px">64.48%</div>
+          <div style="color:green;margin-left:0.3125rem">64.48%</div>
         </div>
       </div>
       <div class="distribution-bottom">img</div>
@@ -70,22 +70,22 @@ export default {};
 
 <style scoped lang='less'>
 .top {
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #777;
+  border: 0.0625rem solid #777;
   &-top {
     display: flex;
     width: 100%;
     &-left {
-      width: 80px;
-      height: 80px;
-      border-radius: 80px;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 5rem;
       background-color: #fff;
       color: black;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
     &-right {
       flex: 1;
@@ -93,14 +93,14 @@ export default {};
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-evenly;
-      font-size: 14px;
+      font-size: 0.875rem;
       &-top {
-        font-size: 16px;
+        font-size: 1rem;
       }
       &-center {
         display: flex;
         color: #777;
-        margin-top: 10px;
+        margin-top: 0.625rem;
       }
     }
   }
@@ -108,29 +108,29 @@ export default {};
     background-color: green;
     color: white;
     width: 40%;
-    height: 30px;
-    line-height: 30px;
-    margin-top: 20px;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin-top: 1.25rem;
   }
 }
 .num {
-  padding: 15px 10px;
-  margin-top: 20px;
-  border: 1px solid #777;
+  padding: 0.9375rem 0.625rem;
+  margin-top: 1.25rem;
+  border: 0.0625rem solid #777;
   &-top {
     display: flex;
   }
   &-bottom {
-    height: 200px;
+    height: 12.5rem;
     background-color: #fff;
     color: black;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 }
 .distribution {
-  padding: 15px 10px;
-  margin-top: 20px;
-  border: 1px solid #777;
+  padding: 0.9375rem 0.625rem;
+  margin-top: 1.25rem;
+  border: 0.0625rem solid #777;
   &-top {
     display: flex;
     justify-content: space-between;
@@ -141,37 +141,37 @@ export default {};
     }
   }
   &-bottom {
-    height: 200px;
+    height: 12.5rem;
     background-color: #fff;
     color: black;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 }
 .music {
-  padding: 15px 10px;
-  margin-top: 20px;
-  border: 1px solid #777;
+  padding: 0.9375rem 0.625rem;
+  margin-top: 1.25rem;
+  border: 0.0625rem solid #777;
   &-top {
     display: flex;
   }
   &-item {
     display: flex;
-    border-bottom: 1px solid #777;
-    padding: 20px 0;
+    border-bottom: 0.0625rem solid #777;
+    padding: 1.25rem 0;
     &-left {
-      width: 70px;
-      height: 100px;
+      width: 4.375rem;
+      height: 6.25rem;
       background-color: #fff;
       color: black;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
     &-right {
-      font-size: 14px;
+      font-size: 0.875rem;
       display: flex;
       flex-direction: column;
       flex: 1;
       &-top {
-        font-size: 16px;
+        font-size: 1rem;
         text-align: left;
       }
       &-center {
@@ -179,17 +179,17 @@ export default {};
         justify-content: space-between;
         align-items: center;
         color: #777;
-        margin: 10px 0;
+        margin: 0.625rem 0;
         &-left {
           display: flex;
           align-items: center;
           &-img {
-            width: 20px;
-            height: 20px;
-            border-radius: 20px;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 1.25rem;
             background-color: #fff;
             color: black;
-            margin-right: 5px;
+            margin-right: 0.3125rem;
           }
         }
       }

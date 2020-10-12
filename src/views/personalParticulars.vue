@@ -29,9 +29,9 @@ export default {};
 
 <style scoped lang='less'>
 .item {
-  padding: 20px 0;
+  padding: 1.25rem 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #777;
+  border-bottom: 0.0625rem solid #777;
 }
 </style>

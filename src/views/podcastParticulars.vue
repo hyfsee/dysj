@@ -188,30 +188,30 @@ export default {
 <style scoped lang='less'>
 .top {
   display: flex;
-  padding: 10px;
-  border-bottom: 1px solid #777;
+  padding: 0.625rem;
+  border-bottom: 0.0625rem solid #777;
   &-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     &-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 70px;
+      width: 4.375rem;
+      height: 4.375rem;
+      border-radius: 4.375rem;
       color: black;
       background-color: #fff;
     }
     &-top {
-      font-size: 14px;
-      margin: 10px 0;
+      font-size: 0.875rem;
+      margin: 0.625rem 0;
     }
     &-center {
       color: green;
     }
     &-bottom {
-      font-size: 14px;
-      padding: 3px 25px;
-      margin-top: 10px;
+      font-size: 0.875rem;
+      padding: 0.1875rem 1.5625rem;
+      margin-top: 0.625rem;
       background-color: green;
     }
   }
@@ -220,27 +220,27 @@ export default {
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
-    padding: 0 10px;
-    border-left: 1px solid #777;
+    margin-left: 0.625rem;
+    padding: 0 0.625rem;
+    border-left: 0.0625rem solid #777;
     &-top {
       display: flex;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       &-txt {
-        border: 1px solid green;
-        margin-left: 10px;
+        border: 0.0625rem solid green;
+        margin-left: 0.625rem;
       }
     }
     &-center {
       width: 100%;
       display: flex;
-      font-size: 14px;
+      font-size: 0.875rem;
       color: #777;
       justify-content: space-between;
     }
     &-bottom {
-      font-size: 14px;
-      margin-top: 10px;
+      font-size: 0.875rem;
+      margin-top: 0.625rem;
     }
   }
 }
@@ -248,23 +248,23 @@ export default {
 .percent {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #777;
+  padding: 0.625rem 0;
+  border-bottom: 0.0625rem solid #777;
   &-nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #777;
     &-item {
       display: flex;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       color: white;
       &-style {
         color: green;
-        font-size: 20px;
-        margin-right: 10px;
+        font-size: 1.25rem;
+        margin-right: 0.625rem;
       }
     }
   }
@@ -273,15 +273,15 @@ export default {
 .num {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
-  padding: 10px 0;
-  border-bottom: 1px solid #777;
+  font-size: 0.875rem;
+  padding: 0.625rem 0;
+  border-bottom: 0.0625rem solid #777;
   &-left {
     display: flex;
     align-items: center;
     &-txt {
-      font-size: 16px;
-      margin-right: 5px;
+      font-size: 1rem;
+      margin-right: 0.3125rem;
     }
   }
 }
@@ -293,9 +293,9 @@ export default {
     display: flex;
     justify-content: space-between;
     color: #777;
-    font-size: 14px;
-    border-bottom: 1px solid #777;
-    padding: 10px 0;
+    font-size: 0.875rem;
+    border-bottom: 0.0625rem solid #777;
+    padding: 0.625rem 0;
     &-right {
       display: flex;
       align-items: center;
@@ -308,17 +308,17 @@ export default {
     &-item {
       display: flex;
       justify-content: space-between;
-      font-size: 14px;
+      font-size: 0.875rem;
       align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px solid #777;
+      padding: 0.625rem 0;
+      border-bottom: 0.0625rem solid #777;
       color: #777;
       &-left {
         display: flex;
         align-items: center;
         color: white;
         &-txt {
-          font-size: 16px;
+          font-size: 1rem;
         }
       }
     }
@@ -329,9 +329,9 @@ export default {
   display: flex;
   flex-direction: column;
   &-img {
-    margin: 20px 0 20px 20px;
+    margin: 1.25rem 0 1.25rem 1.25rem;
     background-color: #fff;
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
@@ -340,11 +340,11 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   &-top {
-    font-size: 20px;
-    border-bottom: 1px solid #777;
+    font-size: 1.25rem;
+    border-bottom: 0.0625rem solid #777;
     width: 100%;
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
   }
   &-center {
     display: flex;
@@ -352,18 +352,18 @@ export default {
   }
   &-show1 {
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     color: white;
     &-top {
       display: flex;
-      font-size: 14px;
+      font-size: 0.875rem;
       justify-content: space-between;
     }
     &-center {
-      height: 20px;
+      height: 1.25rem;
       background-color: #fff;
       color: black;
-      margin: 10px 0 30px;
+      margin: 0.625rem 0 1.875rem;
     }
     /deep/ .van-circle__text {
       color: white;
@@ -378,8 +378,8 @@ export default {
   &-top {
     width: 100%;
     display: flex;
-    padding: 10px 0;
-    border-bottom: 1px solid #777;
+    padding: 0.625rem 0;
+    border-bottom: 0.0625rem solid #777;
   }
   &-bottom {
     display: flex;
@@ -387,24 +387,24 @@ export default {
     &-item {
       display: flex;
       color: black;
-      padding: 10px 0;
+      padding: 0.625rem 0;
       &-left {
         background-color: #fff;
-        width: 60px;
-        margin-right: 10px;
+        width: 3.75rem;
+        margin-right: 0.625rem;
       }
       &-right {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #777;
         &-top {
-          font-size: 16px;
+          font-size: 1rem;
           color: white;
         }
         &-center {
-          margin: 10px 0;
+          margin: 0.625rem 0;
         }
         &-bottom {
           width: 100%;
@@ -422,30 +422,30 @@ export default {
   align-items: flex-start;
   &-top {
     width: 100%;
-    border-bottom: 1px solid #777;
+    border-bottom: 0.0625rem solid #777;
     display: flex;
-    padding: 10px 0;
+    padding: 0.625rem 0;
   }
   /deep/ .van-tabs {
-    width: 100px;
+    width: 6.25rem;
   }
   &-bottom {
     display: flex;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0.625rem;
 
     &-item {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 33.33%;
-      margin: 0 10px 10px 0;
+      margin: 0 0.625rem 0.625rem 0;
       &:nth-child(3n) {
         margin-right: 0;
       }
       &-top {
         width: 100%;
-        height: 130px;
+        height: 8.125rem;
         background-color: #fff;
         color: black;
       }

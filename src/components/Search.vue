@@ -23,7 +23,7 @@ export default {
 .search {
   width: 100%;
   padding: 0.3125rem 0 0.3125rem 0.75rem;
-  font-size: 12px;
+  font-size: 0.75rem;
   background-color: #fff;
   color: #777;
   margin: 0.625rem 0;
@@ -31,8 +31,8 @@ export default {
   display: flex;
   align-items: center;
   .van-icon {
-    margin-right: 10px;
-    font-size: 16px;
+    margin-right: 0.625rem;
+    font-size: 1rem;
   }
 }
 </style>

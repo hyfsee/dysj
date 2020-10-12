@@ -63,7 +63,7 @@ export default {
   input {
     width: 100%;
     padding: 0.3125rem 0 0.3125rem 1rem;
-    font-size: 12px;
+    font-size: 0.75rem;
     background-color: #fff;
     color: #777;
     margin: 0.625rem 0;
@@ -73,7 +73,7 @@ export default {
     align-items: center;
   }
   .van-icon-search {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     position: absolute;
     right: 0.9375rem;
     top: 3.3125rem;
@@ -98,33 +98,33 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    border: 1px solid #777;
+    padding: 1.25rem;
+    border: 0.0625rem solid #777;
     &-left {
       display: flex;
       &-left {
-        width: 70px;
-        height: 70px;
-        border-radius: 70px;
+        width: 4.375rem;
+        height: 4.375rem;
+        border-radius: 4.375rem;
         background-color: #fff;
         color: black;
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
       &-right {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #777;
         &-top {
           color: white;
           display: flex;
           align-items: center;
-          font-size: 16px;
-          margin-bottom: 10px;
+          font-size: 1rem;
+          margin-bottom: 0.625rem;
           &-style {
-            margin-left: 10px;
-            border: 1px solid green;
+            margin-left: 0.625rem;
+            border: 0.0625rem solid green;
             color: green;
           }
         }
@@ -134,9 +134,9 @@ export default {
 }
 .bottom {
   position: absolute;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
+  width: 8.125rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   background-color: #fff;
   color: black;
   bottom: 15%;

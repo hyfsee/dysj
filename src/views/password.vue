@@ -13,24 +13,24 @@ export default {};
 
 <style scoped lang='less'>
 .phone {
-  padding: 50px 30px 0;
+  padding: 3.125rem 1.875rem 0;
   input {
     width: 100%;
-    height: 40px;
-    padding-left: 20px;
+    height: 2.5rem;
+    padding-left: 1.25rem;
     border: 0;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     color: black;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
   }
   .bottom {
     display: flex;
     justify-content: center;
     background-color: #777;
-    height: 40px;
-    border-radius: 20px;
-    line-height: 40px;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    line-height: 2.5rem;
   }
 }
 </style>

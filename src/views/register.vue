@@ -23,7 +23,7 @@ export default {
 
 <style scoped lang='less'>
 .register {
-  padding: 20px;
+  padding: 1.25rem;
   .phone {
     position: relative;
     &-style {
@@ -38,20 +38,20 @@ export default {
     }
   }
   input {
-    margin-top: 20px;
-    padding-left: 20px;
+    margin-top: 1.25rem;
+    padding-left: 1.25rem;
     width: 100%;
-    height: 40px;
-    border-radius: 40px;
+    height: 2.5rem;
+    border-radius: 2.5rem;
     color: black;
   }
   .btn {
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 3.125rem;
     background-color: green;
-    line-height: 50px;
-    margin: 30px auto 0;
+    line-height: 3.125rem;
+    margin: 1.875rem auto 0;
   }
 }
 </style>

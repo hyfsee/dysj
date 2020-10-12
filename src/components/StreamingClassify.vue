@@ -39,34 +39,34 @@ export default {
 
 <style scoped lang='less'>
 .streaming {
-  padding: 15px 10px;
+  padding: 0.9375rem 0.625rem;
   background-color: #fff;
   color: black;
   &-top {
     display: flex;
     &-left {
-      width: 60px;
-      height: 70px;
+      width: 3.75rem;
+      height: 4.375rem;
       background-color: red;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
     &-right {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #777;
       .item-top {
         color: black;
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
       }
       .item-bottom {
         display: flex;
         align-items: center;
-        margin-top: 5px;
+        margin-top: 0.3125rem;
         &-txt {
-          margin-left: 10px;
+          margin-left: 0.625rem;
         }
       }
     }

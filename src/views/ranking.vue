@@ -120,34 +120,34 @@ export default {
 <style scoped lang='less'>
 /deep/ .van-picker__toolbar {
   position: absolute;
-  bottom: -60px;
+  bottom: -3.75rem;
   color: black;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: 30px;
+  height: 1.875rem;
   .van-ellipsis {
     display: none;
   }
   .van-picker__cancel {
-    padding: 0 35px;
+    padding: 0 2.1875rem;
     background-color: #999;
     color: green;
   }
   .van-picker__confirm {
-    padding: 0 35px;
+    padding: 0 2.1875rem;
     background-color: green;
     color: white;
   }
 }
 /deep/ .van-cell {
   display: flex;
-  padding: 2px 5px;
-  border: 1px solid #777;
+  padding: 0.125rem 0.3125rem;
+  border: 0.0625rem solid #777;
   background: 0;
   .van-cell__value {
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 .ranking {
@@ -158,8 +158,8 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 0;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    border-top: 0.0625rem solid #999;
+    border-bottom: 0.0625rem solid #999;
     .van-radio--horizontal {
       margin-top: 0.625rem;
     }
@@ -173,7 +173,7 @@ export default {
     justify-content: flex-start;
     align-items: center;
     padding: 1.25rem 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.0625rem solid #999;
     &-font {
       margin-right: 1rem;
     }
@@ -183,7 +183,7 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     padding: 1.25rem 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.0625rem solid #999;
     .duration-item {
       margin-top: 1.25rem;
       width: 100%;
@@ -202,7 +202,7 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     padding: 1.25rem 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.0625rem solid #999;
     &-item {
       margin-top: 1.25rem;
       .van-checkbox--horizontal {
@@ -243,6 +243,6 @@ export default {
   width: 100%;
   height: 50%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0rem;
 }
 </style>

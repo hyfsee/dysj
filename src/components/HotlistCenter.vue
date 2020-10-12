@@ -74,7 +74,7 @@ export default {
   color: #999;
   font-size: 0.875rem;
   align-items: center;
-  border-bottom: 1px solid #555;
+  border-bottom: 0.0625rem solid #555;
   &-left {
     display: flex;
     flex-direction: column;
@@ -84,21 +84,21 @@ export default {
       display: flex;
       align-items: center;
       &-text {
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
     }
     &-bottom {
       display: flex;
       flex-direction: column;
-      border: 1px solid #777;
+      border: 0.0625rem solid #777;
       margin-top: 0.625rem;
       font-size: 0.75rem;
       background-color: #333;
       position: absolute;
-      top: 15px;
+      top: 0.9375rem;
       span {
         padding: 0.125rem 0.5rem;
-        border-bottom: 1px solid #777;
+        border-bottom: 0.0625rem solid #777;
       }
       & span:nth-child(3) {
         border: 0;

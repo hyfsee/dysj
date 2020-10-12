@@ -244,13 +244,13 @@ export default {
 <style scoped lang='less'>
 .top {
   display: flex;
-  padding: 20px 50px 20px 20px;
+  padding: 1.25rem 3.125rem 1.25rem 1.25rem;
   &-left {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     background-color: #fff;
     color: black;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
   &-right {
     display: flex;
@@ -259,27 +259,27 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       &-left {
         color: red;
-        height: 21px;
-        line-height: 21px;
+        height: 1.3125rem;
+        line-height: 1.3125rem;
       }
       &-center {
         text-decoration: line-through;
         color: #777;
-        height: 21px;
-        line-height: 21px;
+        height: 1.3125rem;
+        line-height: 1.3125rem;
       }
       &-right {
         display: flex;
         align-items: center;
-        font-size: 14px;
-        height: 21px;
-        line-height: 21px;
+        font-size: 0.875rem;
+        height: 1.3125rem;
+        line-height: 1.3125rem;
         color: green;
         .van-icon {
-          margin-left: 5px;
+          margin-left: 0.3125rem;
         }
       }
     }
@@ -287,8 +287,8 @@ export default {
 }
 
 .overview {
-  border: 1px solid #777;
-  padding: 15px 10px;
+  border: 0.0625rem solid #777;
+  padding: 0.9375rem 0.625rem;
   &-top {
     display: flex;
   }
@@ -301,12 +301,12 @@ export default {
       align-items: center;
       justify-content: center;
       width: 25%;
-      padding: 10px;
+      padding: 0.625rem;
       &-top {
         color: green;
       }
       &-bottom {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
   }
@@ -314,31 +314,31 @@ export default {
 
 .analyse {
   &-one {
-    margin-top: 10px;
-    padding: 15px 10px;
-    border: 1px solid #777;
+    margin-top: 0.625rem;
+    padding: 0.9375rem 0.625rem;
+    border: 0.0625rem solid #777;
     &-top {
       display: flex;
     }
     &-bottom {
       display: flex;
-      padding: 20px 0;
+      padding: 1.25rem 0;
       &-item {
         width: 25%;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #777;
         &-style {
           color: white;
-          font-size: 16px;
-          margin-bottom: 5px;
+          font-size: 1rem;
+          margin-bottom: 0.3125rem;
         }
       }
     }
     /deep/ .van-tabs {
-      width: 200px;
+      width: 12.5rem;
       /deep/ .van-tab {
-        border: 1px solid #777;
-        margin-left: -1px;
+        border: 0.0625rem solid #777;
+        margin-left: -0.0625rem;
         &:nth-child(1) {
           margin-left: 0;
         }
@@ -348,49 +348,49 @@ export default {
       }
     }
     &-tab {
-      height: 200px;
+      height: 12.5rem;
       background-color: #fff;
       color: black;
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
     &-proportion {
-      margin-top: 40px;
+      margin-top: 2.5rem;
       &-top {
         display: flex;
       }
       &-bottom {
-        height: 200px;
+        height: 12.5rem;
         background-color: #fff;
         color: black;
-        margin-top: 10px;
+        margin-top: 0.625rem;
       }
     }
     &-portrayal {
-      margin-top: 40px;
+      margin-top: 2.5rem;
       &-top {
         display: flex;
       }
       &-bottom {
-        height: 200px;
+        height: 12.5rem;
         background-color: #fff;
         color: black;
-        margin-top: 10px;
+        margin-top: 0.625rem;
       }
     }
   }
   &-two {
-    border: 1px solid #777;
-    margin-top: 20px;
-    padding: 15px 10px;
+    border: 0.0625rem solid #777;
+    margin-top: 1.25rem;
+    padding: 0.9375rem 0.625rem;
     &-top {
       display: flex;
     }
     .van-tabs {
       width: 50%;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       /deep/ .van-tab {
-        border: 1px solid #777;
-        margin-left: -1px;
+        border: 0.0625rem solid #777;
+        margin-left: -0.0625rem;
         &:nth-child(1) {
           margin-left: 0;
         }
@@ -407,59 +407,59 @@ export default {
           display: flex;
           align-items: center;
           .van-icon {
-            margin-left: 3px;
+            margin-left: 0.1875rem;
           }
         }
         &-right {
           display: flex;
           align-items: center;
           .van-icon {
-            margin-left: 3px;
+            margin-left: 0.1875rem;
           }
         }
       }
       &-bottom {
         &-item {
-          padding: 15px 0;
-          border-bottom: 1px solid #777;
+          padding: 0.9375rem 0;
+          border-bottom: 0.0625rem solid #777;
           &-top {
             display: flex;
             &-left {
-              width: 60px;
-              height: 70px;
+              width: 3.75rem;
+              height: 4.375rem;
               background-color: #fff;
               color: black;
-              margin-right: 10px;
+              margin-right: 0.625rem;
             }
             &-right {
               flex: 1;
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-              font-size: 14px;
+              font-size: 0.875rem;
               color: #777;
               &-top {
-                font-size: 16px;
+                font-size: 1rem;
                 color: white;
-                margin-bottom: 8px;
+                margin-bottom: 0.5rem;
               }
               &-center {
                 display: flex;
                 align-items: center;
                 div {
-                  margin-right: 8px;
+                  margin-right: 0.5rem;
                 }
               }
               &-bottom {
                 display: flex;
                 align-items: center;
                 div {
-                  margin-right: 8px;
+                  margin-right: 0.5rem;
                 }
                 &-img {
-                  width: 20px;
-                  height: 20px;
-                  border-radius: 20px;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                  border-radius: 1.25rem;
                   background-color: #fff;
                   color: black;
                 }
@@ -468,15 +468,15 @@ export default {
           }
           &-bottom {
             display: flex;
-            margin-top: 10px;
-            font-size: 14px;
+            margin-top: 0.625rem;
+            font-size: 0.875rem;
             div {
               flex: 1;
-              padding: 3px;
+              padding: 0.1875rem;
               background-color: green;
             }
             &-left {
-              margin-right: 20px;
+              margin-right: 1.25rem;
             }
           }
         }
@@ -484,14 +484,14 @@ export default {
     }
   }
   &-three {
-    border: 1px solid #777;
-    margin-top: 20px;
-    padding: 15px 10px;
+    border: 0.0625rem solid #777;
+    margin-top: 1.25rem;
+    padding: 0.9375rem 0.625rem;
     &-top {
       display: flex;
     }
     &-bottom {
-      font-size: 14px;
+      font-size: 0.875rem;
       &-top {
         display: flex;
         justify-content: space-between;
@@ -504,22 +504,22 @@ export default {
           display: flex;
           align-items: center;
           .van-checkbox {
-            margin-right: 3px;
+            margin-right: 0.1875rem;
           }
         }
       }
       &-bottom {
-        height: 100px;
+        height: 6.25rem;
         background-color: #fff;
         color: black;
-        margin-top: 10px;
+        margin-top: 0.625rem;
       }
     }
   }
   &-four {
-    margin-top: 20px;
-    border: 1px solid #777;
-    padding: 15px 10px;
+    margin-top: 1.25rem;
+    border: 0.0625rem solid #777;
+    padding: 0.9375rem 0.625rem;
     &-top {
       display: flex;
     }
@@ -536,17 +536,17 @@ export default {
         &-item {
           display: flex;
           justify-content: space-between;
-          padding: 20px 10px;
-          border-bottom: 1px solid #777;
+          padding: 1.25rem 0.625rem;
+          border-bottom: 0.0625rem solid #777;
           &-left {
             display: flex;
             &-img {
-              width: 50px;
-              height: 50px;
-              border-radius: 50px;
+              width: 3.125rem;
+              height: 3.125rem;
+              border-radius: 3.125rem;
               background-color: #fff;
               color: black;
-              margin-right: 10px;
+              margin-right: 0.625rem;
             }
             &-txt {
               display: flex;
@@ -554,8 +554,8 @@ export default {
               align-items: flex-start;
               &-bottom {
                 color: #777;
-                font-size: 14px;
-                margin-top: 8px;
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
               }
             }
           }
@@ -565,11 +565,11 @@ export default {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-              margin-left: 10px;
+              margin-left: 0.625rem;
               &-style {
-                font-size: 12px;
+                font-size: 0.75rem;
                 color: #777;
-                margin-top: 10px;
+                margin-top: 0.625rem;
               }
             }
           }

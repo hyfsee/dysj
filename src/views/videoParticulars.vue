@@ -158,24 +158,24 @@ export default {};
 .nav {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border: 1px solid white;
+  padding: 1.25rem;
+  border: 0.0625rem solid white;
   &-top {
     display: flex;
     &-left {
-      width: 70px;
-      height: 100px;
+      width: 4.375rem;
+      height: 6.25rem;
       background-color: #fff;
       color: black;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
     &-right {
-      font-size: 14px;
+      font-size: 0.875rem;
       display: flex;
       flex-direction: column;
       flex: 1;
       &-top {
-        font-size: 16px;
+        font-size: 1rem;
         text-align: left;
       }
       &-center {
@@ -183,17 +183,17 @@ export default {};
         justify-content: space-between;
         align-items: center;
         color: #777;
-        margin: 10px 0;
+        margin: 0.625rem 0;
         &-left {
           display: flex;
           align-items: center;
           &-img {
-            width: 20px;
-            height: 20px;
-            border-radius: 20px;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 1.25rem;
             background-color: #fff;
             color: black;
-            margin-right: 5px;
+            margin-right: 0.3125rem;
           }
         }
       }
@@ -205,15 +205,15 @@ export default {};
   }
   &-bottom {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     div {
       flex: 1;
       background-color: green;
-      height: 30px;
-      line-height: 30px;
+      height: 1.875rem;
+      line-height: 1.875rem;
     }
     &-style {
-      margin-right: 20px;
+      margin-right: 1.25rem;
     }
   }
 }
@@ -221,13 +221,13 @@ export default {};
 .logoNav {
   display: flex;
   align-items: center;
-  padding: 20px;
-  border: 1px solid white;
-  margin-top: 10px;
+  padding: 1.25rem;
+  border: 0.0625rem solid white;
+  margin-top: 0.625rem;
   &-left {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 3.125rem;
     background-color: #fff;
     color: black;
   }
@@ -236,16 +236,16 @@ export default {};
     flex-direction: column;
     align-items: flex-start;
     flex: 1;
-    margin: 0 20px 0 10px;
+    margin: 0 1.25rem 0 0.625rem;
     &-top {
     }
     &-bottom {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #777;
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
   }
 }
@@ -253,9 +253,9 @@ export default {};
 .comment {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  border: 1px solid white;
-  margin-top: 10px;
+  padding: 0.625rem;
+  border: 0.0625rem solid white;
+  margin-top: 0.625rem;
   &-top {
     display: flex;
     flex-direction: column;
@@ -264,19 +264,19 @@ export default {};
       justify-content: space-between;
       align-items: center;
       &-right {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
     &-bottom {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       div {
-        border: 1px solid;
+        border: 0.0625rem solid;
         background-color: #fff;
         color: black;
-        padding: 3px 10px;
-        margin: 0 10px 10px 0;
+        padding: 0.1875rem 0.625rem;
+        margin: 0 0.625rem 0.625rem 0;
       }
     }
   }
@@ -292,40 +292,40 @@ export default {};
       &-item {
         display: flex;
         flex-direction: column;
-        padding: 10px 0;
-        border-bottom: 1px solid #777;
+        padding: 0.625rem 0;
+        border-bottom: 0.0625rem solid #777;
         &-top {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-size: 14px;
+          font-size: 0.875rem;
           &-left {
             display: flex;
             align-items: center;
             &-img {
-              width: 25px;
-              height: 25px;
+              width: 1.5625rem;
+              height: 1.5625rem;
               background-color: #fff;
               color: black;
-              border-radius: 25px;
-              margin-right: 10px;
+              border-radius: 1.5625rem;
+              margin-right: 0.625rem;
             }
           }
           &-right {
             display: flex;
             align-items: center;
             .van-icon {
-              margin-right: 5px;
+              margin-right: 0.3125rem;
             }
           }
         }
         &-center {
           text-align: left;
-          margin: 10px 0;
+          margin: 0.625rem 0;
         }
         &-bottom {
           display: flex;
-          font-size: 14px;
+          font-size: 0.875rem;
           color: #777;
         }
       }

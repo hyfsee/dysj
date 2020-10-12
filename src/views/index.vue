@@ -89,7 +89,7 @@
                 <div>fans</div>
                 <div style="color: red; display: flex">
                   <van-icon
-                    style="margin-right: 3px; font-size: 14px"
+                    style="margin-right: 0.1875rem; font-size: 0.875rem"
                     name="back-top"
                   />232.2w
                 </div>
@@ -99,7 +99,7 @@
                 <div>praise</div>
                 <div style="color: red; display: flex">
                   <van-icon
-                    style="margin-right: 3px; font-size: 14px"
+                    style="margin-right: 0.1875rem; font-size: 0.875rem"
                     name="back-top"
                   />232.2w
                 </div>
@@ -129,19 +129,19 @@
         </div>
         <div class="listImg">
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
         </div>
@@ -156,19 +156,19 @@
         </div>
         <div class="listImg">
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
         </div>
@@ -188,7 +188,7 @@
             </div>
             <div class="listTxt-item-bottom">
               <van-icon name="play-circle-o" />13224.5亿
-              <van-icon name="user-circle-o" style="margin-left: 8px" />7738.5w
+              <van-icon name="user-circle-o" style="margin-left: 0.5rem" />7738.5w
             </div>
           </router-link>
           <router-link to="wordParticulars" class="listTxt-item">
@@ -197,7 +197,7 @@
             </div>
             <div class="listTxt-item-bottom">
               <van-icon name="play-circle-o" />13224.5亿
-              <van-icon name="user-circle-o" style="margin-left: 8px" />7738.5w
+              <van-icon name="user-circle-o" style="margin-left: 0.5rem" />7738.5w
             </div>
           </router-link>
         </div>
@@ -287,13 +287,13 @@ export default {
   margin: 1rem 0;
   .van-swipe-item {
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     color: #fff;
-    font-size: 20px;
-    line-height: 150px;
+    font-size: 1.25rem;
+    line-height: 9.375rem;
     text-align: center;
     img {
-      height: 100px;
+      height: 6.25rem;
       width: 100%;
     }
   }
@@ -318,11 +318,11 @@ export default {
 .list {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   &-top {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     &-left {
       color: white;
     }
@@ -336,9 +336,9 @@ export default {
   &-bottom {
     .podacster {
       display: flex;
-      padding: 10px;
+      padding: 0.625rem;
       background-color: #fff;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       &-left {
         width: 5rem;
         height: 5rem;
@@ -358,23 +358,23 @@ export default {
           &-list {
             z-index: 1;
             color: white;
-            font-size: 14px;
+            font-size: 0.875rem;
             position: absolute;
-            left: 124px;
+            left: 7.75rem;
           }
           &-icon {
-            left: 4px;
-            font-size: 30px;
+            left: 0.25rem;
+            font-size: 1.875rem;
             color: red;
           }
           &-name {
-            margin: 0 5px 0 10px;
+            margin: 0 0.3125rem 0 0.625rem;
           }
           &-color {
             color: green;
-            font-size: 12px;
-            padding: 1px 3px;
-            border: 2px solid green;
+            font-size: 0.75rem;
+            padding: 0.0625rem 0.1875rem;
+            border: 0.125rem solid green;
           }
         }
         &-bottom {
@@ -397,16 +397,16 @@ export default {
     overflow-x: auto;
     &-item {
       flex: 0 0 28%;
-      margin-right: 10px;
+      margin-right: 0.625rem;
       &-top {
-        height: 150px;
+        height: 9.375rem;
         background-color: #fff;
         color: black;
       }
       &-bottom {
-        font-size: 12px;
+        font-size: 0.75rem;
         display: flex;
-        margin-top: 5px;
+        margin-top: 0.3125rem;
       }
     }
   }
@@ -414,14 +414,14 @@ export default {
     display: flex;
     &-item {
       width: 50%;
-      margin: 0 10px 10px 0;
+      margin: 0 0.625rem 0.625rem 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-      border: 1px solid #777;
-      height: 80px;
-      padding: 15px 10px;
+      border: 0.0625rem solid #777;
+      height: 5rem;
+      padding: 0.9375rem 0.625rem;
       &-top {
         display: flex;
         align-items: center;
@@ -429,7 +429,7 @@ export default {
       &-bottom {
         display: flex;
         align-items: center;
-        font-size: 12px;
+        font-size: 0.75rem;
       }
       &:nth-child(2n) {
         margin-right: 0;
@@ -439,10 +439,10 @@ export default {
 }
 
 .hotlist {
-  font-size: 14px;
+  font-size: 0.875rem;
   &-top {
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 </style>

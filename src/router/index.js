@@ -51,9 +51,15 @@ const routes = [
         path: '/motif',
         component: () => import('@/views/motif')
     },
+    //登陆页面
     {
         path: '/login',
         component: () => import('@/views/login')
+    },
+    //注册页面
+    {
+        path: '/register',
+        component: () => import('@/views/register')
     },
     //搜索页面
     {
@@ -101,11 +107,10 @@ const routes = [
         component: () => import('@/views/phone')
     },
     //设置密码
-   {
-    path: '/password',
-    component: () => import('@/views/password')
-},
-
+    {
+        path: '/password',
+        component: () => import('@/views/password')
+    },
     // 直播监控
     {
         path: '/ranking',
@@ -115,6 +120,26 @@ const routes = [
     {
         path: '/price',
         component: () => import('@/views/price')
+    },
+    //收藏详情
+    {
+        path: '/collect',
+        component: () => import('@/views/collect')
+    },
+    //购买记录 
+    {
+        path: '/purchase',
+        component: () => import('@/views/purchase')
+    },
+    //会员充值
+    {
+        path: '/member',
+        component: () => import('@/views/member')
+    },
+    //查看更多账号
+    {
+        path: '/account',
+        component: () => import('@/views/account')
     },
 ]
 

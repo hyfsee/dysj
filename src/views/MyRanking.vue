@@ -8,17 +8,23 @@
           <div>添加账号</div>
         </div>
       </div>
-      <div class="center-bottom">查看更多</div>
+      <router-link to="/account" class="center-bottom">查看更多</router-link>
     </div>
+    <Tab :tab="tab" />
   </div>
 </template>
 
 <script>
+import Tab from "../components/Tab";
 export default {
-  data() {
-    return {};
+  components: {
+    Tab,
   },
-  methods: {},
+  data() {
+    return {
+      tab: ["最新动态", "账号总览"],
+    };
+  },
 };
 </script>
 
@@ -37,6 +43,9 @@ export default {
       width: 25%;
       font-size: 14px;
     }
+  }
+  &-bottom {
+    color: blue;
   }
 }
 </style>

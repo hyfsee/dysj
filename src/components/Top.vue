@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <div class="top-top">
-      <van-icon @click="showClick" v-if="!fotShow" name="arrow-left" />
+      <van-icon @click="showClick" v-if="topIconShow" name="arrow-left" />
       飞瓜数据-{{ data }}
     </div>
     <div class="top-icon">
@@ -13,14 +13,13 @@
 
 <script>
 export default {
-  props: ["data", "fotShow"],
+  props: ["data", "topIconShow"],
   data() {
     return {};
   },
   methods: {
     showClick() {
       this.$router.go(-1);
-      this.$emit("ifShow", true);
     },
   },
 };

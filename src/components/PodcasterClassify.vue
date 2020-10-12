@@ -39,6 +39,7 @@ export default {
   display: flex;
   padding: 10px;
   background-color: #fff;
+  margin-bottom: 10px;
   &-left {
     width: 5rem;
     height: 5rem;

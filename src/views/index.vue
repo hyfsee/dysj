@@ -22,94 +22,184 @@
       />
     </van-grid>
 
-    <!-- 热门榜单 -->
-    <div class="hotlists">
-      <div class="hotlists-top">
-        <i>热门榜单</i>
-        <span @click="hotUrlClick">
+    <!-- 热门直播 -->
+    <div class="list">
+      <div class="list-top">
+        <div class="list-top-left">实时热门直播</div>
+        <router-link to="/streaming" class="list-top-right">
           <div>全部</div>
           <van-icon name="arrow" />
-        </span>
+        </router-link>
       </div>
-      <div class="hotlists-bottom">
-        <div class="hotlist">
-          <div class="hotlist-top">
-            <span>涨粉榜</span>
-            <van-icon name="arrow" />
-          </div>
-          <div class="hotlist-bottom">
-            <img src="../../img/1.jpg" alt />
-            <span>济南公安</span>
-          </div>
+      <div class="listImg">
+        <div class="listImg-item">
+          <div class="listImg-item-top">img</div>
+          <div class="listImg-item-bottom">新人主播9.9专场</div>
         </div>
-        <div class="hotlist">
-          <div class="hotlist-top">
-            <span>涨粉榜</span>
-            <van-icon name="arrow" />
-          </div>
-          <div class="hotlist-bottom">
-            <img src="../../img/1.jpg" alt />
-            <span>济南公安</span>
-          </div>
+        <div class="listImg-item">
+          <div class="listImg-item-top">img</div>
+          <div class="listImg-item-bottom">新人主播9.9专场</div>
         </div>
-        <div class="hotlist">
-          <div class="hotlist-top">
-            <span>涨粉榜</span>
-            <van-icon name="arrow" />
-          </div>
-          <div class="hotlist-bottom">
-            <img src="../../img/1.jpg" alt />
-            <span>济南公安</span>
+        <div class="listImg-item">
+          <div class="listImg-item-top">img</div>
+          <div class="listImg-item-bottom">新人主播9.9专场</div>
+        </div>
+        <div class="listImg-item">
+          <div class="listImg-item-top">img</div>
+          <div class="listImg-item-bottom">新人主播9.9专场</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 热销商品榜 -->
+    <div class="list">
+      <div class="list-top">
+        <div class="list-top-left">热销商品榜</div>
+        <router-link to="/commodityParticulars" class="list-top-right">
+          <div>全部</div>
+          <van-icon name="arrow" />
+        </router-link>
+      </div>
+      <div class="list-bottom">
+        <PodcasterClassify :data="industrial" />
+      </div>
+    </div>
+
+    <!-- 主播涨粉榜 -->
+    <div class="list">
+      <div class="list-top">
+        <div class="list-top-left">主播涨粉榜</div>
+        <router-link to="/podcast" class="list-top-right">
+          <div>全部</div>
+          <van-icon name="arrow" />
+        </router-link>
+      </div>
+      <div class="list-bottom">
+        <div class="podacster">
+          <div class="podacster-left">img</div>
+          <div class="podacster-right">
+            <div class="podacster-right-top">
+              <div class="podacster-right-top-list">1</div>
+              <van-icon class="podacster-right-top-icon" name="star" />
+              <div class="podacster-right-top-name">name</div>
+              <div class="podacster-right-top-color">生活</div>
+            </div>
+            <div class="podacster-right-bottom">
+              <div class="num">
+                <div>fans</div>
+                <div style="color: red; display: flex">
+                  <van-icon
+                    style="margin-right: 3px; font-size: 14px"
+                    name="back-top"
+                  />232.2w
+                </div>
+                <div>粉丝数</div>
+              </div>
+              <div class="num">
+                <div>praise</div>
+                <div style="color: red; display: flex">
+                  <van-icon
+                    style="margin-right: 3px; font-size: 14px"
+                    name="back-top"
+                  />232.2w
+                </div>
+                <div>粉丝数</div>
+              </div>
+              <div class="num">
+                <div>exponent</div>
+                <div>--</div>
+                <div>粉丝数</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 商品排行榜 -->
-    <div class="rankinglist">
-      <div class="rankinglist-top">
-        <div class="rankinglist-top-left">商品排行榜</div>
-        <div class="rankinglist-top-right" @click="rankingUrlClick">
-          <div>全部</div>
-          <van-icon name="arrow" />
+    <!-- 热门创意素材 -->
+    <div class="hotlist">
+      <div class="hotlist-top">热门创意素材</div>
+      <div class="list">
+        <div class="list-top">
+          <div class="list-top-left">热门视频</div>
+          <router-link to="/originality" class="list-top-right">
+            <div>全部</div>
+            <van-icon name="arrow" />
+          </router-link>
+        </div>
+        <div class="listImg">
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
         </div>
       </div>
-      <div class="rankinglist-bottom">
-        <div class="rankinglist-bottom-list">
-          <em style="color: orange; font-weight: 700; font-size: 1rem">01</em>
-          <img src alt />
-          <div class="rankinglist-bottom-list-nav">
-            <div>布沙发极简组合简约北欧</div>
-            <div style="color: orange">￥7280.0</div>
-            <div class="rankinglist-bottom-list-nav-color">
-              <div>浏览量增量：27.4W</div>
-              <div>销售增量：1518</div>
-            </div>
+      <div class="list">
+        <div class="list-top">
+          <div class="list-top-left">热门音乐</div>
+          <router-link to="/originality" class="list-top-right">
+            <div>全部</div>
+            <van-icon name="arrow" />
+          </router-link>
+        </div>
+        <div class="listImg">
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
+          </div>
+          <div class="listImg-item">
+            <div class="listImg-item-top" style="height: 100px">img</div>
+            <div class="listImg-item-bottom">新人主播9.9专场</div>
           </div>
         </div>
-        <div class="rankinglist-bottom-list">
-          <em style="color: orange; font-weight: 700; font-size: 1rem">01</em>
-          <img src alt />
-          <div class="rankinglist-bottom-list-nav">
-            <div>布沙发极简组合简约北欧</div>
-            <div style="color: orange">￥7280.0</div>
-            <div class="rankinglist-bottom-list-nav-color">
-              <div>浏览量增量：27.4W</div>
-              <div>销售增量：1518</div>
-            </div>
-          </div>
+      </div>
+      <div class="list">
+        <div class="list-top">
+          <div class="list-top-left">热门话题</div>
+          <router-link to="/originality" class="list-top-right">
+            <div>全部</div>
+            <van-icon name="arrow" />
+          </router-link>
         </div>
-        <div class="rankinglist-bottom-list">
-          <em style="color: orange; font-weight: 700; font-size: 1rem">01</em>
-          <img src alt />
-          <div class="rankinglist-bottom-list-nav">
-            <div>布沙发极简组合简约北欧</div>
-            <div style="color: orange">￥7280.0</div>
-            <div class="rankinglist-bottom-list-nav-color">
-              <div>浏览量增量：27.4W</div>
-              <div>销售增量：1518</div>
+        <div class="listTxt">
+          <router-link to="wordParticulars" class="listTxt-item">
+            <div class="listTxt-item-top">
+              <van-icon name="label-o" />抖音小助手
             </div>
-          </div>
+            <div class="listTxt-item-bottom">
+              <van-icon name="play-circle-o" />13224.5亿
+              <van-icon name="user-circle-o" style="margin-left: 8px" />7738.5w
+            </div>
+          </router-link>
+          <router-link to="wordParticulars" class="listTxt-item">
+            <div class="listTxt-item-top">
+              <van-icon name="label-o" />抖音小助手
+            </div>
+            <div class="listTxt-item-bottom">
+              <van-icon name="play-circle-o" />13224.5亿
+              <van-icon name="user-circle-o" style="margin-left: 8px" />7738.5w
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -117,9 +207,11 @@
 </template>
 <script>
 import Search from "../components/Search";
+import PodcasterClassify from "../components/PodcasterClassify";
 export default {
   components: {
     Search,
+    PodcasterClassify,
   },
   data() {
     return {
@@ -165,16 +257,19 @@ export default {
         },
       ],
       content: "搜索的达人或抖音号或商品",
+      //热销商品榜
+      industrial: {
+        name: "浣语",
+        img: "img",
+        fans: "22.4w",
+        praise: "114.3w",
+        exponent: "1666.4",
+      },
     };
   },
   methods: {
     mouseClick(e) {
       e.preventDefault();
-    },
-    hotUrlClick() {
-      this.$router.push({
-        path: "hotlist/hotlist1",
-      });
     },
     rankingUrlClick() {
       this.$router.push({
@@ -215,64 +310,18 @@ export default {
   }
 }
 
-.hotlists {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
-  overflow: hidden;
-  &-top {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    margin-bottom: 1rem;
-    span {
-      font-size: 0.75rem;
-      color: #999;
-      display: flex;
-      align-items: center;
-    }
-  }
-  &-bottom {
-    display: flex;
-    width: 100%;
-    overflow: auto;
-    .hotlist {
-      flex: 0 0 60%;
-      background-color: orange;
-      padding: 0.625rem 1rem 1rem;
-      margin-right: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      color: white;
-      overflow-x: scroll;
-      &-top {
-        display: flex;
-        margin-bottom: 0.3125rem;
-        justify-content: space-between;
-      }
-      &-bottom {
-        display: flex;
-        font-size: 0.75rem;
-        img {
-          width: 2rem;
-          height: 2rem;
-          margin-right: 0.625rem;
-        }
-      }
-    }
-  }
-}
-
 .van-swipe-cell__right {
   display: flex;
 }
 
-.rankinglist {
+.list {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
   &-top {
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
     &-left {
       color: white;
     }
@@ -280,37 +329,119 @@ export default {
       color: #999;
       display: flex;
       align-items: center;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
     }
   }
   &-bottom {
-    display: flex;
-    flex-direction: column;
-    &-list {
+    .podacster {
       display: flex;
-      font-size: 0.875rem;
-      align-items: center;
-      padding: 0.625rem 0;
-      border-bottom: 1px solid #999;
-      img {
-        width: 4rem;
-        height: 4rem;
-        margin: 0 0.625rem;
+      padding: 10px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      &-left {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 6.25rem;
+        background-color: red;
+        color: black;
+        margin-right: 0.625rem;
       }
-      &-nav {
-        flex: 1;
+      &-right {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        color: white;
-        &-color {
-          color: #999;
+        color: black;
+        flex: 1;
+        &-top {
           display: flex;
+          align-items: center;
+          &-list {
+            z-index: 1;
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            left: 124px;
+          }
+          &-icon {
+            left: 4px;
+            font-size: 30px;
+            color: red;
+          }
+          &-name {
+            margin: 0 5px 0 10px;
+          }
+          &-color {
+            color: green;
+            font-size: 12px;
+            padding: 1px 3px;
+            border: 2px solid green;
+          }
+        }
+        &-bottom {
+          display: flex;
+          font-size: 0.75rem;
+          margin-top: 0.625rem;
           justify-content: space-between;
-          font-size: 0.625rem;
+          width: 80%;
+          .num {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
         }
       }
     }
+  }
+  .listImg {
+    display: flex;
+    overflow: hidden;
+    &-item {
+      flex: 0 0 28%;
+      margin-right: 10px;
+      &-top {
+        height: 150px;
+        background-color: #fff;
+        color: black;
+      }
+      &-bottom {
+        font-size: 12px;
+        display: flex;
+        margin-top: 5px;
+      }
+    }
+  }
+  .listTxt {
+    display: flex;
+    &-item {
+      width: 50%;
+      margin: 0 10px 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      border: 1px solid #777;
+      height: 80px;
+      padding: 15px 10px;
+      &-top {
+        display: flex;
+        align-items: center;
+      }
+      &-bottom {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.hotlist {
+  font-size: 14px;
+  &-top {
+    display: flex;
+    font-size: 16px;
   }
 }
 </style>

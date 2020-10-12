@@ -5,8 +5,8 @@
     <Tab :tab="tab" />
     <HotlistCenter :listDay="listDay" :center="center" />
     <router-link to="/commodityParticulars">
-      <PodcasterClassify :data="industrial"
-    /></router-link>
+      <PodcasterClassify :data="industrial"/>
+      </router-link>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      content: "找主播,找达人,找播主从这边开始吧",
+      content: "找商品,看热销,搜爆品",
       tab: ["商品榜", "爆款榜", "视频榜", "小店榜"],
       industrial: {
         name: "浣语",

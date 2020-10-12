@@ -22,6 +22,7 @@ export default {};
     border-radius: 20px;
     color: black;
     margin-bottom: 20px;
+    font-size: 14px;
   }
   .bottom {
     display: flex;

@@ -17,7 +17,7 @@
 export default {
   data() {
     return {
-      active: 0,
+      active: this.$store.state.active,
       tab: [
         {
           id: 0,
@@ -61,14 +61,8 @@ export default {
     },
   },
   watch: {
-    "$route.path"(to) {
-      for (let i = 0; i < this.tab.length; i++) {
-        if (this.tab[i].path == to.split("/")[1]) {
-          this.active = i;
-        }
-      }
-      //当监听完并渲染完active的高亮,需要把文字内容渲染到top栏上
-      this.handleClick(this.active);
+    active() {
+      this.$store.state.active = this.active;
     },
   },
 };

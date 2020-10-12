@@ -22,7 +22,7 @@
       />
     </van-grid>
 
-    <!-- 热门直播 -->
+    <!-- 实时热门直播 -->
     <div class="list">
       <div class="list-top">
         <div class="list-top-left">实时热门直播</div>
@@ -32,22 +32,22 @@
         </router-link>
       </div>
       <div class="listImg">
-        <div class="listImg-item">
+        <router-link class="listImg-item" to="/streaming">
           <div class="listImg-item-top">img</div>
           <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </div>
-        <div class="listImg-item">
+        </router-link>
+        <router-link class="listImg-item" to="/streaming">
           <div class="listImg-item-top">img</div>
           <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </div>
-        <div class="listImg-item">
+        </router-link>
+        <router-link class="listImg-item" to="/streaming">
           <div class="listImg-item-top">img</div>
           <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </div>
-        <div class="listImg-item">
+        </router-link>
+        <router-link class="listImg-item" to="/streaming">
           <div class="listImg-item-top">img</div>
           <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </div>
+        </router-link>
       </div>
     </div>
 
@@ -128,22 +128,22 @@
           </router-link>
         </div>
         <div class="listImg">
-          <div class="listImg-item">
+          <router-link class="listImg-item" to="/originality">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
-          <div class="listImg-item">
+          </router-link>
+          <router-link class="listImg-item" to="/originality">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
-          <div class="listImg-item">
+          </router-link>
+          <router-link class="listImg-item" to="/originality">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
-          <div class="listImg-item">
+          </router-link>
+          <router-link class="listImg-item" to="/originality">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
+          </router-link>
         </div>
       </div>
       <div class="list">
@@ -155,22 +155,22 @@
           </router-link>
         </div>
         <div class="listImg">
-          <div class="listImg-item">
+          <router-link to="/originality" class="listImg-item">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
-          <div class="listImg-item">
+          </router-link>
+          <router-link to="/originality" class="listImg-item">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
-          <div class="listImg-item">
+          </router-link>
+          <router-link to="/originality" class="listImg-item">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
-          <div class="listImg-item">
+          </router-link>
+          <router-link to="/originality" class="listImg-item">
             <div class="listImg-item-top" style="height: 100px">img</div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
-          </div>
+          </router-link>
         </div>
       </div>
       <div class="list">
@@ -277,7 +277,8 @@ export default {
       });
     },
   },
-  mounted() {},
+  mounted() {
+  },
 };
 </script>
 
@@ -393,7 +394,7 @@ export default {
   }
   .listImg {
     display: flex;
-    overflow: hidden;
+    overflow-x: auto;
     &-item {
       flex: 0 0 28%;
       margin-right: 10px;

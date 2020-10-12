@@ -42,6 +42,7 @@
       </router-link>
     </div>
     <router-link to="/login" class="login">去登陆</router-link>
+    <router-link to="/member" class="login">vip充值</router-link>
   </div>
 </template>
 

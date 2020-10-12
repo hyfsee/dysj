@@ -1,6 +1,19 @@
 <template>
   <div>
-    <Search :content="content" />
+    <div class="search">
+      <input
+        v-model="content"
+        class="search"
+        placeholder="输入抖音名称或抖音号,主页链接"
+      />
+      <van-icon
+        v-if="show"
+        @click="iconRemoveClick"
+        class="search-icon-cross"
+        name="cross"
+      />
+      <van-icon name="search" />
+    </div>
     <div class="center">
       <div class="center-item">
         <div class="center-item-left">
@@ -22,20 +35,64 @@
 </template>
 
 <script>
-import Search from "../components/Search";
 export default {
-  components: {
-    Search
-  },
   data() {
     return {
-      content: "输入抖音名称或抖音号,主页链接"
+      show: false,
+      content: "",
     };
-  }
+  },
+  methods: {
+    iconRemoveClick() {
+      this.content = "";
+    },
+  },
+  watch: {
+    content() {
+      this.show = true;
+      if (!this.content) {
+        this.show = false;
+      }
+    },
+  },
 };
 </script>
 
 <style scoped lang='less'>
+.search {
+  input {
+    width: 100%;
+    padding: 0.3125rem 0 0.3125rem 1rem;
+    font-size: 12px;
+    background-color: #fff;
+    color: #777;
+    margin: 0.625rem 0;
+    border-radius: 1.25rem;
+    border: 0;
+    display: flex;
+    align-items: center;
+  }
+  .van-icon-search {
+    margin-right: 10px;
+    position: absolute;
+    right: 0.9375rem;
+    top: 3.3125rem;
+    color: #777;
+    font-size: 1.25rem;
+  }
+
+  .van-icon-cross {
+    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    background-color: #333;
+    position: absolute;
+    right: 3.75rem;
+    top: 3.4375rem;
+    color: white;
+  }
+}
 .center {
   &-item {
     display: flex;
@@ -65,9 +122,9 @@ export default {
           align-items: center;
           font-size: 16px;
           margin-bottom: 10px;
-          &-style{
+          &-style {
             margin-left: 10px;
-            border:1px solid green;
+            border: 1px solid green;
             color: green;
           }
         }

@@ -1,5 +1,6 @@
 <template>
-  <form method="post" class="login">
+  <div class="login">
+    <div class="top">登陆</div>
     <div class="login-item">
       <label>手机号码：</label>
       <input
@@ -24,8 +25,13 @@
         value="发送验证码"
       />
     </div>
-    <div class="login-bottom" @click="ifClick">登陆</div>
-  </form>
+    <div class="login-bottom">
+      <router-link to="/" class="login-bottom-login">登陆</router-link>
+      <router-link to="/register" class="login-bottom-register"
+        >去注册</router-link
+      >
+    </div>
+  </div>
 </template>
 
 <script>
@@ -41,13 +47,6 @@ export default {
     showClick() {
       if (this.username) {
         this.disabled = true;
-      }
-    },
-    ifClick() {
-      if (this.phoneNum) {
-        this.$router.push({
-          path: "/",
-        });
       }
     },
   },
@@ -91,11 +90,21 @@ export default {
     }
   }
   &-bottom {
-    background-color: #fff;
-    width: 100px;
-    margin: 0.625rem 0 0 9.375rem;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
     color: black;
     padding: 5px 0;
+    &-login {
+      background-color: #fff;
+      padding: 10px 30px;
+      width: 100px;
+    }
+    &-register {
+      margin-left: 10px;
+      border-bottom: 1px solid black;
+    }
   }
 }
 .btn {

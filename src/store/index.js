@@ -18,7 +18,8 @@ const store = new Vuex.Store({
         bgcColor: {
             background: "#333",
             color: "white",
-        }
+        },
+        active: 0
     },
     mutations: {
 

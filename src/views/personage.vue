@@ -20,12 +20,16 @@
         <div><van-icon name="clock" />播控历史</div>
         <van-icon name="arrow" />
       </router-link>
-      <div class="personage-bottom-item">
+      <router-link to="/collect" class="personage-bottom-item">
         <div><van-icon name="star" />我的收藏</div>
         <van-icon name="arrow" />
-      </div>
+      </router-link>
       <router-link to="/originality" class="personage-bottom-item">
         <div><van-icon name="thumb-circle" />创意素材</div>
+        <van-icon name="arrow" />
+      </router-link>
+      <router-link to="/purchase" class="personage-bottom-item">
+        <div><van-icon name="cash-back-record" />购买记录</div>
         <van-icon name="arrow" />
       </router-link>
       <router-link to="/price" class="personage-bottom-item">
@@ -37,6 +41,8 @@
         <van-icon name="arrow" />
       </router-link>
     </div>
+    <router-link to="/login" class="login">去登陆</router-link>
+    <router-link to="/member" class="login">vip充值</router-link>
   </div>
 </template>
 
@@ -87,5 +93,11 @@ export default {
       }
     }
   }
+}
+.login {
+  margin-top: 20px;
+  height: 40px;
+  background-color: green;
+  line-height: 40px;
 }
 </style>>

@@ -6,7 +6,7 @@
     title-active-color="white"
     v-model="active"
   >
-    <van-tab v-for="(item, index) in tab" :key="index" :title="item"> </van-tab>
+    <van-tab v-for="(item, index) in tab" :key="index" :title="item"></van-tab>
   </van-tabs>
 </template>
 

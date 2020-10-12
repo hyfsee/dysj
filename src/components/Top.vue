@@ -1,8 +1,12 @@
 <template>
   <div class="top">
     <div class="top-top">
-      <van-icon @click="showClick" v-if="!fotShow" name="arrow-left" />
-      飞瓜数据-{{ data }}
+      <van-icon
+        @click="showClick"
+        v-if="$route.meta.topIconShow"
+        name="arrow-left"
+      />
+      飞瓜数据-{{ $route.meta.name }}
     </div>
     <div class="top-icon">
       <van-icon style="margin-right: 0.625rem" name="apps-o" />
@@ -13,14 +17,13 @@
 
 <script>
 export default {
-  props: ["data", "fotShow"],
+  props: ["data", "topIconShow"],
   data() {
     return {};
   },
   methods: {
     showClick() {
       this.$router.go(-1);
-      this.$emit("ifShow", true);
     },
   },
 };

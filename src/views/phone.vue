@@ -25,6 +25,7 @@ export default {};
     border-radius: 20px;
     color: black;
     margin-bottom: 20px;
+    font-size: 14px;
   }
   .center {
     position: relative;
@@ -32,12 +33,13 @@ export default {};
       position: absolute;
       background-color: green;
       color: black;
-      height: 30px;
-      width: 100px;
-      line-height: 30px;
-      border-radius: 15px;
-      top: 5px;
-      right: 40px;
+      height: 1.875rem;
+      width: 6.25rem;
+      line-height: 1.875rem;
+      border-radius: 0.9375rem;
+      top: 0.3125rem;
+      right: 0.3125rem;
+      font-size: 14px;
     }
   }
   .bottom {

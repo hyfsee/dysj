@@ -38,11 +38,17 @@ const routes = [
         path: '/MyRanking',
         component: () => import('@/views/MyRanking')
     },
+    //创意素材
+    {
+        path: '/originality',
+        component: () => import('@/views/originality')
+    },
     //监控历史
     {
         path: '/RankingHistory',
         component: () => import('@/views/RankingHistory')
-    }, {
+    },
+    {
         path: '/motif',
         component: () => import('@/views/motif')
     },
@@ -74,7 +80,43 @@ const routes = [
     {
         path: '/commodityParticulars',
         component: () => import('@/views/commodityParticulars')
-    }
+    },
+    //音乐详情
+    {
+        path: '/musicParticulars',
+        component: () => import('@/views/musicParticulars')
+    },
+    //话题详情
+    {
+        path: '/wordParticulars',
+        component: () => import('@/views/wordParticulars')
+    },
+    //个人中心详情
+    {
+        path: '/personalParticulars',
+        component: () => import('@/views/personalParticulars')
+    },
+    //绑定手机号
+    {
+        path: '/phone',
+        component: () => import('@/views/phone')
+    },
+    //设置密码
+   {
+    path: '/password',
+    component: () => import('@/views/password')
+},
+
+    // 直播监控
+    {
+        path: '/ranking',
+        component: () => import('@/views/ranking')
+    },
+    // 抖音号估值
+    {
+        path: '/price',
+        component: () => import('@/views/price')
+    },
 ]
 
 const originalPush = VueRouter.prototype.push

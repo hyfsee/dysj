@@ -1,7 +1,8 @@
 <template>
+  <!-- 个人中心页面 -->
   <div class="personage">
     <div class="personage-top">会员到期时间:{{}}</div>
-    <div class="personage-img">
+    <router-link to="/personalParticulars" class="personage-img">
       <van-image
         round
         width="5rem"
@@ -9,7 +10,7 @@
         src="https://img.yzcdn.cn/vant/cat.jpeg"
       />
       <div>账户ID:</div>
-    </div>
+    </router-link>
     <div class="personage-bottom">
       <router-link to="/MyRanking" class="personage-bottom-item">
         <div><van-icon name="friends" />我的抖音号</div>
@@ -23,10 +24,14 @@
         <div><van-icon name="star" />我的收藏</div>
         <van-icon name="arrow" />
       </div>
-      <div class="personage-bottom-item">
+      <router-link to="/originality" class="personage-bottom-item">
+        <div><van-icon name="thumb-circle" />创意素材</div>
+        <van-icon name="arrow" />
+      </router-link>
+      <router-link to="/price" class="personage-bottom-item">
         <div><van-icon name="gold-coin" />抖音号估值</div>
         <van-icon name="arrow" />
-      </div>
+      </router-link>
       <router-link to="/motif" class="personage-bottom-item">
         <div><van-icon name="todo-list" />主题设置</div>
         <van-icon name="arrow" />

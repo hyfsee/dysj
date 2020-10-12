@@ -1,10 +1,11 @@
 <template>
+  <!-- 直播页面 -->
   <div>
     <Search :content="content" />
     <Tab :tab="tab" />
     <HotlistCenter :listDay="listDay" :center="center" />
     <router-link to="/streamingParticulars">
-    <StreamingClassify :data="industrial" />
+      <StreamingClassify :data="industrial" />
     </router-link>
   </div>
 </template>
@@ -24,7 +25,8 @@ export default {
   data() {
     return {
       content: "找主播,找达人,找播主从这边开始吧",
-      tab: ["销量榜", "人气榜", "达人榜", "商品榜"], //行业榜数据
+      tab: ["销量榜", "人气榜", "达人榜", "商品榜"],
+      //行业榜数据
       industrial: {
         name: "浣语",
         img: "img",
@@ -36,8 +38,7 @@ export default {
       center: "筛选",
     };
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>
 

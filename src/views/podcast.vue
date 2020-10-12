@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 播主页面 -->
     <Search :content="content" />
     <Tab :tab="tab" />
     <HotlistCenter :listDay="listDay" :center="center" />

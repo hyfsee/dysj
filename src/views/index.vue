@@ -134,10 +134,10 @@ export default {
         {
           id: 1,
           img: "https://img.yzcdn.cn/vant/apple-1.jpg",
-          name: "抖音热门",
+          name: "创意素材",
           color: "pink",
           icon: "fire",
-          url: "/hot",
+          url: "/originality",
         },
         {
           id: 2,
@@ -145,7 +145,7 @@ export default {
           name: "热门商品",
           color: "skyblue",
           icon: "shop",
-          url: "/hotlist/hotlist2",
+          url: "/commodity",
         },
         {
           id: 3,
@@ -153,7 +153,7 @@ export default {
           name: "我的抖音号",
           color: "green",
           icon: "label",
-          url: "/personage",
+          url: "/MyRanking",
         },
         {
           id: 4,

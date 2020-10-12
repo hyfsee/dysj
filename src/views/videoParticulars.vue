@@ -1,4 +1,5 @@
 <template>
+  <!-- 音乐详情 -->
   <div>
     <div class="nav">
       <div class="nav-top">

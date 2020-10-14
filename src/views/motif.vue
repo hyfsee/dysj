@@ -101,7 +101,7 @@ export default {
       align-items: center;
       justify-content: center;
       background-color: white;
-      border: 1px solid white;
+      border: 0.0625rem solid white;
     }
   }
   &-center {

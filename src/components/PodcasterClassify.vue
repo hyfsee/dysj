@@ -37,9 +37,9 @@ export default {
 <style scoped lang='less'>
 .podacster {
   display: flex;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   &-left {
     width: 5rem;
     height: 5rem;
@@ -59,23 +59,23 @@ export default {
       &-list {
         z-index: 1;
         color: white;
-        font-size: 14px;
+        font-size: 0.875rem;
         position: absolute;
-        left: 124px;
+        left: 7.75rem;
       }
       &-icon {
-        left: 4px;
-        font-size: 30px;
+        left: 0.25rem;
+        font-size: 1.875rem;
         color: red;
       }
       &-name {
-        margin: 0 5px 0 10px;
+        margin: 0 0.3125rem 0 0.625rem;
       }
       &-color {
         color: green;
-        font-size: 12px;
-        padding: 1px 3px;
-        border: 2px solid green;
+        font-size: 0.75rem;
+        padding: 0.0625rem 0.1875rem;
+        border: 0.125rem solid green;
       }
     }
     &-bottom {

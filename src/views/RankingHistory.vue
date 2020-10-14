@@ -36,8 +36,8 @@ export default {
     color: #777;
     div {
       flex: 1;
-      padding: 10px 0;
-      height: 40px;
+      padding: 0.625rem 0;
+      height: 2.5rem;
       display: flex;
       justify-content: center;
     }
@@ -45,6 +45,6 @@ export default {
 }
 .active {
   color: orange;
-  border-bottom: 2px solid;
+  border-bottom: 0.125rem solid;
 }
 </style>

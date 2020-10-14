@@ -140,7 +140,7 @@
           <div>新增粉丝2.7w</div>
           <div>粉丝转化率5.175</div>
         </div>
-        <div style="margin-top:10px" class="two-center-top">
+        <div style="margin-top:0.625rem" class="two-center-top">
           <div>本场点赞19.8w</div>
           <div>送礼人数7993</div>
         </div>
@@ -204,14 +204,14 @@ export default {
 <style scoped lang='less'>
 .top {
   display: flex;
-  padding: 10px;
-  border: 1px solid #777;
+  padding: 0.625rem;
+  border: 0.0625rem solid #777;
   &-left {
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     background-color: #fff;
     color: black;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
   &-right {
     display: flex;
@@ -222,12 +222,12 @@ export default {
       display: flex;
       align-items: center;
       &-txt {
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
     }
     &-bottom {
       display: flex;
-      font-size: 14px;
+      font-size: 0.875rem;
       color: #777;
       justify-content: space-between;
     }
@@ -236,57 +236,57 @@ export default {
 
 .center {
   display: flex;
-  padding: 20px 10px;
-  margin-top: 20px;
-  border: 1px solid #777;
+  padding: 1.25rem 0.625rem;
+  margin-top: 1.25rem;
+  border: 0.0625rem solid #777;
   &-left {
-    width: 70px;
-    height: 100px;
+    width: 4.375rem;
+    height: 6.25rem;
     background-color: #fff;
     color: black;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
   &-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     &-txt {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
     &-span {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #777;
       display: flex;
       align-items: center;
       &-style {
         background-color: green;
         color: white;
-        padding: 1px 4px;
+        padding: 0.0625rem 0.25rem;
       }
       &-color {
         background-color: pink;
         color: white;
-        padding: 1px 4px;
-        margin-left: 10px;
+        padding: 0.0625rem 0.25rem;
+        margin-left: 0.625rem;
       }
     }
   }
 }
 .moods {
-  padding: 20px 10px;
-  margin-top: 20px;
-  border: 1px solid #777;
+  padding: 1.25rem 0.625rem;
+  margin-top: 1.25rem;
+  border: 0.0625rem solid #777;
   &-top {
     display: flex;
   }
   .podacster {
     display: flex;
     font-size: 0.75rem;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     justify-content: space-around;
     width: 100%;
     &-num {
-      font-size: 16px;
+      font-size: 1rem;
       color: green;
     }
   }
@@ -294,26 +294,26 @@ export default {
     &-top {
       display: flex;
       justify-content: space-between;
-      padding: 10px 0;
+      padding: 0.625rem 0;
       &-left {
         display: flex;
         align-items: center;
         div {
-          margin: 0 8px 0 3px;
+          margin: 0 0.5rem 0 0.1875rem;
         }
       }
     }
     &-bottom {
-      height: 200px;
+      height: 12.5rem;
       background-color: #fff;
       color: black;
     }
   }
 }
 .one {
-  padding: 15px 10px;
-  border: 1px solid #777;
-  margin-top: 10px;
+  padding: 0.9375rem 0.625rem;
+  border: 0.0625rem solid #777;
+  margin-top: 0.625rem;
   &-top {
     &-top {
       display: flex;
@@ -325,8 +325,8 @@ export default {
       display: flex;
       background-color: #fff;
       color: green;
-      padding: 5px 0;
-      margin-top: 15px;
+      padding: 0.3125rem 0;
+      margin-top: 0.9375rem;
       justify-content: space-evenly;
     }
   }
@@ -346,16 +346,16 @@ export default {
   }
   &-bottom {
     &-item {
-      padding: 20px 0;
-      border-bottom: 1px solid #777;
+      padding: 1.25rem 0;
+      border-bottom: 0.0625rem solid #777;
       &-top {
         display: flex;
         &-left {
-          width: 100px;
-          height: 100px;
+          width: 6.25rem;
+          height: 6.25rem;
           background-color: #fff;
           color: black;
-          margin-right: 10px;
+          margin-right: 0.625rem;
         }
         &-right {
           align-items: flex-start;
@@ -363,9 +363,9 @@ export default {
           display: flex;
           justify-content: space-around;
           flex-direction: column;
-          font-size: 14px;
+          font-size: 0.875rem;
           &-top {
-            font-size: 16px;
+            font-size: 1rem;
           }
           &-center {
             display: flex;
@@ -382,14 +382,14 @@ export default {
         justify-content: space-evenly;
         background-color: #fff;
         color: black;
-        margin-top: 10px;
+        margin-top: 0.625rem;
       }
     }
   }
 }
 .two {
-  padding: 15px 10px;
-  border: 1px solid #777;
+  padding: 0.9375rem 0.625rem;
+  border: 0.0625rem solid #777;
   &-top {
     display: flex;
     &-item {
@@ -397,16 +397,16 @@ export default {
     }
   }
   &-center {
-    margin-top: 20px;
-    border: 1px solid #777;
-    padding: 10px 0;
+    margin-top: 1.25rem;
+    border: 0.0625rem solid #777;
+    padding: 0.625rem 0;
     &-top {
       display: flex;
       justify-content: space-evenly;
     }
   }
   &-cumulative {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     &-top {
       display: flex;
     }
@@ -414,36 +414,36 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 15px 0;
+      padding: 0.9375rem 0;
       &-left {
         display: flex;
         align-items: center;
       }
     }
     &-bottom {
-      height: 200px;
+      height: 12.5rem;
       background-color: #fff;
       color: black;
     }
   }
 }
 .three {
-  margin-top: 20px;
-  padding: 15px 10px;
-  border: 1px solid #777;
+  margin-top: 1.25rem;
+  padding: 0.9375rem 0.625rem;
+  border: 0.0625rem solid #777;
   &-source {
     &-top {
       display: flex;
     }
     &-bottom {
-      height: 200px;
+      height: 12.5rem;
       background-color: #fff;
       color: black;
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
   }
   &-gender {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     &-top {
       display: flex;
     }
@@ -455,7 +455,7 @@ export default {
       &-bottom {
         background-color: #fff;
         color: black;
-        margin-top: 10px;
+        margin-top: 0.625rem;
       }
     }
   }

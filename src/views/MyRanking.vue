@@ -31,17 +31,17 @@ export default {
 <style scoped lang='less'>
 .top {
   display: flex;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .center {
-  border: 1px solid #777;
-  padding: 20px 0;
+  border: 0.0625rem solid #777;
+  padding: 1.25rem 0;
   &-top {
     display: flex;
     flex-wrap: wrap;
     &-item {
       width: 25%;
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
   &-bottom {

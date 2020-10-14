@@ -103,15 +103,15 @@ export default {
 .center {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 0.875rem;
   &-top {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     &-left {
       display: flex;
       div {
-        margin-right: 8px;
+        margin-right: 0.5rem;
         display: flex;
         align-items: center;
       }
@@ -125,7 +125,7 @@ export default {
 
 .podacster {
   display: flex;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #fff;
   &-left {
     width: 4rem;
@@ -148,15 +148,15 @@ export default {
       display: flex;
       justify-content: space-between;
       font-size: 0.75rem;
-      margin: 5px 0;
+      margin: 0.3125rem 0;
       color: #777;
       &-left {
         display: flex;
         align-items: center;
         &-img {
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
+          width: 1.25rem;
+          height: 1.25rem;
+          border-radius: 1.25rem;
           background-color: red;
         }
       }
@@ -170,7 +170,7 @@ export default {
         display: flex;
         align-items: center;
         .van-icon {
-          margin-right: 5px;
+          margin-right: 0.3125rem;
         }
       }
     }
@@ -180,27 +180,27 @@ export default {
 .music {
   &-item {
     display: flex;
-    padding: 10px;
-    border: 1px solid #777;
-    margin-top: 10px;
+    padding: 0.625rem;
+    border: 0.0625rem solid #777;
+    margin-top: 0.625rem;
     &-left {
-      width: 70px;
-      height: 70px;
-      border-radius: 70px;
+      width: 4.375rem;
+      height: 4.375rem;
+      border-radius: 4.375rem;
       background-color: #fff;
       color: black;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
     &-right {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       color: #777;
-      font-size: 14px;
+      font-size: 0.875rem;
       &-top {
-        font-size: 16px;
+        font-size: 1rem;
         color: white;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
       }
     }
   }
@@ -208,9 +208,9 @@ export default {
 
 .topic {
   &-item {
-    padding: 10px;
-    border: 1px solid #777;
-    margin-top: 10px;
+    padding: 0.625rem;
+    border: 0.0625rem solid #777;
+    margin-top: 0.625rem;
     display: flex;
     justify-content: space-between;
     &-left {

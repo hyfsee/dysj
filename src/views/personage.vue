@@ -63,7 +63,7 @@ export default {
   flex-direction: column;
   color: white;
   &-top {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #888;
     background-color: #555;
     width: 100%;
@@ -71,7 +71,7 @@ export default {
   }
   &-img {
     padding: 0.625rem 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     width: 100%;
   }
   &-bottom {
@@ -81,8 +81,8 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #555;
-      padding: 10px 0;
+      border-bottom: 0.0625rem solid #555;
+      padding: 0.625rem 0;
       div {
         display: flex;
         align-items: center;
@@ -95,9 +95,9 @@ export default {
   }
 }
 .login {
-  margin-top: 20px;
-  height: 40px;
+  margin-top: 1.25rem;
+  height: 2.5rem;
   background-color: green;
-  line-height: 40px;
+  line-height: 2.5rem;
 }
 </style>>

@@ -1,35 +1,16 @@
 <template>
   <div class="login">
     <div class="top">登陆</div>
-    <div class="login-item">
-      <label>手机号码：</label>
-      <input
-        :class="{ btn: disabled }"
-        :disabled="disabled"
-        v-model="phone"
-        type="text"
-        name=""
-        id=""
-        value=""
-      />
-    </div>
-    <div class="login-center">
-      <div>验证码：</div>
-      <input v-model="phoneNum" class="login-center-input" type="text" />
-      <input
-        type="button"
-        :disabled="disabled"
-        :class="{ btn: disabled }"
-        class="login-center-btn"
-        @click="showClick"
-        value="发送验证码"
-      />
+    <input type="text" placeholder="请输入绑定手机号" />
+    <div class="center">
+      <input type="text" placeholder="请输入验证码" />
+      <div>发送验证码</div>
     </div>
     <div class="login-bottom">
       <router-link to="/" class="login-bottom-login">登陆</router-link>
       <router-link to="/register" class="login-bottom-register"
-        >去注册</router-link
-      >
+        >去注册
+      </router-link>
     </div>
   </div>
 </template>
@@ -37,73 +18,52 @@
 <script>
 export default {
   data() {
-    return {
-      phone: "",
-      disabled: false,
-      phoneNum: "",
-    };
-  },
-  methods: {
-    showClick() {
-      if (this.username) {
-        this.disabled = true;
-      }
-    },
+    return {};
   },
 };
 </script>
 
 <style scoped lang='less'>
 .login {
-  display: flex;
-  flex-direction: column;
-  &-item {
-    display: flex;
-    align-items: center;
-    margin: 7.25rem 0 0 3.125rem;
-    color: white;
-    input {
-      background-color: #333;
-      width: 150px;
-      border: 0;
-      border-bottom: 1px solid white;
-    }
+  padding: 1.25rem;
+  input {
+    margin-top: 1.25rem;
+    padding-left: 1.25rem;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    color: black;
   }
-  &-center {
-    display: flex;
-    align-items: center;
-    margin: 0.625rem 0 0 3.125rem;
-    height: 30px;
-    color: white;
-    &-btn {
-      margin-left: 0.625rem;
-      padding: 0 0.3125rem;
+  .center {
+    position: relative;
+    div {
+      position: absolute;
+      background-color: green;
       color: black;
-      font-size: 0.75rem;
-      height: 100%;
-    }
-    &-input {
-      border: 0;
-      background-color: #333;
-      border-bottom: 1px solid white;
-      width: 100px;
+      height: 1.875rem;
+      width: 6.25rem;
+      line-height: 1.875rem;
+      border-radius: 0.9375rem;
+      top: 1.5625rem;
+      right: 0.3125rem;
+      font-size: 0.875rem;
     }
   }
   &-bottom {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     justify-content: center;
     align-items: center;
     color: black;
-    padding: 5px 0;
+    padding: 0.3125rem 0;
     &-login {
       background-color: #fff;
-      padding: 10px 30px;
-      width: 100px;
+      padding: 0.625rem 1.875rem;
+      width: 6.25rem;
     }
     &-register {
-      margin-left: 10px;
-      border-bottom: 1px solid black;
+      margin-left: 0.625rem;
+      border-bottom: 0.0625rem solid black;
     }
   }
 }

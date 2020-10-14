@@ -168,9 +168,9 @@ export default {
   }
 }
 .nav {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   &-item {
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     color: black;
     background-color: #fff;
     display: flex;
@@ -180,15 +180,15 @@ export default {
       display: flex;
       align-items: center;
       .nav-item-img {
-        width: 30px;
-        height: 30px;
-        border-radius: 30px;
-        margin: 0 5px;
+        width: 1.875rem;
+        height: 1.875rem;
+        border-radius: 1.875rem;
+        margin: 0 0.3125rem;
         background-color: red;
       }
     }
     &-right {
-      font-size: 14px;
+      font-size: 0.875rem;
       color: #555;
     }
   }

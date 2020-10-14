@@ -2,7 +2,13 @@
   <div>
     <div class="top">
       <div class="top-top">
-        <div class="top-top-left">img</div>
+        <div class="top-top-left">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
         <div class="top-top-right">
           <div class="top-top-right-top">不过人间</div>
           <div class="top-top-right-center">
@@ -18,27 +24,46 @@
     </div>
     <div class="num">
       <div class="num-top">近七日新增参与人数</div>
-      <div class="num-bottom">img</div>
+      <div class="num-bottom">
+        <img style="width: 100%; height: 100%" src="../assets/a1.jpg" alt="" />
+      </div>
     </div>
     <div class="distribution">
       <div class="distribution-top">
         <div class="distribution-top-left">参与人数行业分布</div>
         <div class="distribution-top-right">
           生活
-          <div style="color:green;margin-left:0.3125rem">64.48%</div>
+          <div style="color: green; margin-left: 0.3125rem">64.48%</div>
         </div>
       </div>
-      <div class="distribution-bottom">img</div>
+      <div class="distribution-bottom">
+        <img style="width: 100%; height: 100%" src="../assets/a1.jpg" alt="" />
+      </div>
     </div>
     <div class="music">
       <div class="music-top">关联当前音乐的视频</div>
       <div class="music-item">
-        <div class="music-item-left">img</div>
+        <div class="music-item-left">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
         <div class="music-item-right">
-          <div class="music-item-right-top">最高礼遇,迎'战役'英雄!最高礼遇,迎'战役'英雄最高礼遇</div>
+          <div class="music-item-right-top">
+            最高礼遇,迎'战役'英雄!最高礼遇,迎'战役'英雄最高礼遇
+          </div>
           <div class="music-item-right-center">
             <div class="music-item-right-center-left">
-              <div class="music-item-right-center-left-img">img</div>央视新闻
+              <div class="music-item-right-center-left-img">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="../assets/a1.jpg"
+                  alt=""
+                />
+              </div>
+              央视新闻
             </div>
             <div class="music-item-right-center-right">09月08日</div>
           </div>
@@ -50,12 +75,27 @@
         </div>
       </div>
       <div class="music-item">
-        <div class="music-item-left">img</div>
+        <div class="music-item-left">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
         <div class="music-item-right">
-          <div class="music-item-right-top">最高礼遇,迎'战役'英雄!最高礼遇,迎'战役'英雄最高礼遇</div>
+          <div class="music-item-right-top">
+            最高礼遇,迎'战役'英雄!最高礼遇,迎'战役'英雄最高礼遇
+          </div>
           <div class="music-item-right-center">
             <div class="music-item-right-center-left">
-              <div class="music-item-right-center-left-img">img</div>央视新闻
+              <div class="music-item-right-center-left-img">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="../assets/a1.jpg"
+                  alt=""
+                />
+              </div>
+              央视新闻
             </div>
             <div class="music-item-right-center-right">09月08日</div>
           </div>

@@ -1,30 +1,42 @@
 <template>
   <div>
+    <!-- 直播 -->
     <div class="streaming">
       <div class="streaming-top">
-        <div class="streaming-top-left">img</div>
+        <img class="streaming-top-left" :src="data.online_img" alt="" />
         <div class="streaming-top-right">
-          <div class="item-top">美妆</div>
-          <div class="item-center">行业:生活</div>
+          <div class="item-top">{{ data.online_name }}</div>
+          <div class="item-center">
+            <div>行业:生活</div>
+            <div>{{data.online_updata}}</div>
+          </div>
           <div class="item-bottom">
-            <div class="item-bottom-img">img</div>
-            小影夫妇
-            <span class="item-bottom-txt">469.6w</span>
+            <img
+              style="
+                width: 1.25rem;
+                margin-right: 0.3125rem;
+                height: 1.25rem;
+                border-radius: 0.625rem;
+              "
+              :src="data.online_img"
+              alt=""
+            />
+            {{ data.online_username }}
           </div>
         </div>
       </div>
       <div class="streaming-bottom">
         <div class="streaming-bottom-left">
-          <div>{{ data.fans }}</div>
-          <div>粉丝数</div>
+          <div>{{ data.online_sale }}</div>
+          <div>直播销量</div>
         </div>
         <div class="streaming-bottom-center">
-          <div>{{ data.praise }}</div>
-          <div>粉丝数</div>
+          <div>{{ data.online_money }}</div>
+          <div>销量数</div>
         </div>
         <div class="streaming-bottom-right">
-          <div>{{ data.exponent }}</div>
-          <div>粉丝数</div>
+          <div>{{ data.online_num }}</div>
+          <div>人数峰值</div>
         </div>
       </div>
     </div>
@@ -39,18 +51,18 @@ export default {
 
 <style scoped lang='less'>
 .streaming {
-  padding: 0.9375rem 0.625rem;
-  background-color: #fff;
+  padding: 0.9375rem 0 1.25rem;
+  border-bottom: 0.0625rem solid #777;
   color: black;
   &-top {
     display: flex;
     &-left {
       width: 3.75rem;
       height: 4.375rem;
-      background-color: red;
       margin-right: 0.625rem;
     }
     &-right {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -60,6 +72,11 @@ export default {
         color: black;
         font-size: 1rem;
         margin-bottom: 0.625rem;
+      }
+      .item-center {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
       }
       .item-bottom {
         display: flex;

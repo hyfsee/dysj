@@ -2,11 +2,13 @@
   <div>
     <!-- 商品详情 -->
     <div class="top">
-      <div class="top-left">img</div>
+      <div class="top-left">
+        <img style="width: 100%; height: 100%" :src="nav.order_img" alt="" />
+      </div>
       <div class="top-right">
-        <div class="top-right-top">洁柔face抽纸3层120抽20包</div>
+        <div class="top-right-top">{{ nav.order_title }}</div>
         <div class="top-right-bottom">
-          <div class="top-right-bottom-left">$59.9</div>
+          <div class="top-right-bottom-left">{{ nav.order_money }}</div>
           <div class="top-right-bottom-center">$46.6</div>
           <div class="top-right-bottom-right">
             <div>价格趋势</div>
@@ -21,28 +23,16 @@
       <div class="overview-top">数据概览</div>
       <div class="overview-bottom">
         <div class="overview-bottom-item">
-          <div class="overview-bottom-item-top">58.2w</div>
+          <div class="overview-bottom-item-top">{{ nav.order_mum }}</div>
           <div class="overview-bottom-item-bottom">总访客量</div>
         </div>
         <div class="overview-bottom-item">
-          <div class="overview-bottom-item-top">58.2w</div>
-          <div class="overview-bottom-item-bottom">总访客量</div>
+          <div class="overview-bottom-item-top">{{ nav.order_views }}</div>
+          <div class="overview-bottom-item-bottom">浏览量</div>
         </div>
         <div class="overview-bottom-item">
-          <div class="overview-bottom-item-top">58.2w</div>
-          <div class="overview-bottom-item-bottom">总访客量</div>
-        </div>
-        <div class="overview-bottom-item">
-          <div class="overview-bottom-item-top">58.2w</div>
-          <div class="overview-bottom-item-bottom">总访客量</div>
-        </div>
-        <div class="overview-bottom-item">
-          <div class="overview-bottom-item-top">58.2w</div>
-          <div class="overview-bottom-item-bottom">总访客量</div>
-        </div>
-        <div class="overview-bottom-item">
-          <div class="overview-bottom-item-top">58.2w</div>
-          <div class="overview-bottom-item-bottom">总访客量</div>
+          <div class="overview-bottom-item-top">{{ nav.order_sale }}</div>
+          <div class="overview-bottom-item-bottom">销售量</div>
         </div>
       </div>
     </div>
@@ -74,7 +64,9 @@
         <Tab :tab="tab1" />
         <div class="analyse-one-tab">暂无数据</div>
         <div class="analyse-one-proportion">
-          <div class="analyse-one-proportion-top">近30天发布作品在24小时时间占比</div>
+          <div class="analyse-one-proportion-top">
+            近30天发布作品在24小时时间占比
+          </div>
           <div class="analyse-one-proportion-bottom">暂无数据</div>
         </div>
         <div class="analyse-one-portrayal">
@@ -101,46 +93,86 @@
           <div class="analyse-two-bottom-bottom">
             <div class="analyse-two-bottom-bottom-item">
               <div class="analyse-two-bottom-bottom-item-top">
-                <div class="analyse-two-bottom-bottom-item-top-left">img</div>
+                <div class="analyse-two-bottom-bottom-item-top-left">
+                  <img
+                    style="width: 100%; height: 100%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="analyse-two-bottom-bottom-item-top-right">
-                  <div class="analyse-two-bottom-bottom-item-top-right-top">广东夫妇生活日用品专场来啦</div>
+                  <div class="analyse-two-bottom-bottom-item-top-right-top">
+                    广东夫妇生活日用品专场来啦
+                  </div>
                   <div class="analyse-two-bottom-bottom-item-top-right-center">
                     <div>2020-09-27</div>
                     <div>14:00:21</div>
                     <div>搞笑</div>
                   </div>
                   <div class="analyse-two-bottom-bottom-item-top-right-bottom">
-                    <div class="analyse-two-bottom-bottom-item-top-right-bottom-img">img</div>
+                    <div
+                      class="analyse-two-bottom-bottom-item-top-right-bottom-img"
+                    >
+                      <img
+                        style="width: 100%; height: 100%"
+                        src="../assets/a1.jpg"
+                        alt=""
+                      />
+                    </div>
                     <div>大狼狗邓建鹏&验真夫妇</div>
                     <div>4303.8w</div>
                   </div>
                 </div>
               </div>
               <div class="analyse-two-bottom-bottom-item-bottom">
-                <div class="analyse-two-bottom-bottom-item-bottom-left">人数峰值4.7w</div>
-                <div class="analyse-two-bottom-bottom-item-bottom-right">直播销量64.7w</div>
+                <div class="analyse-two-bottom-bottom-item-bottom-left">
+                  人数峰值4.7w
+                </div>
+                <div class="analyse-two-bottom-bottom-item-bottom-right">
+                  直播销量64.7w
+                </div>
               </div>
             </div>
             <div class="analyse-two-bottom-bottom-item">
               <div class="analyse-two-bottom-bottom-item-top">
-                <div class="analyse-two-bottom-bottom-item-top-left">img</div>
+                <div class="analyse-two-bottom-bottom-item-top-left">
+                  <img
+                    style="width: 100%; height: 100%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="analyse-two-bottom-bottom-item-top-right">
-                  <div class="analyse-two-bottom-bottom-item-top-right-top">广东夫妇生活日用品专场来啦</div>
+                  <div class="analyse-two-bottom-bottom-item-top-right-top">
+                    广东夫妇生活日用品专场来啦
+                  </div>
                   <div class="analyse-two-bottom-bottom-item-top-right-center">
                     <div>2020-09-27</div>
                     <div>14:00:21</div>
                     <div>搞笑</div>
                   </div>
                   <div class="analyse-two-bottom-bottom-item-top-right-bottom">
-                    <div class="analyse-two-bottom-bottom-item-top-right-bottom-img">img</div>
+                    <div
+                      class="analyse-two-bottom-bottom-item-top-right-bottom-img"
+                    >
+                      <img
+                        style="width: 100%; height: 100%"
+                        src="../assets/a1.jpg"
+                        alt=""
+                      />
+                    </div>
                     <div>大狼狗邓建鹏&验真夫妇</div>
                     <div>4303.8w</div>
                   </div>
                 </div>
               </div>
               <div class="analyse-two-bottom-bottom-item-bottom">
-                <div class="analyse-two-bottom-bottom-item-bottom-left">人数峰值4.7w</div>
-                <div class="analyse-two-bottom-bottom-item-bottom-right">直播销量64.7w</div>
+                <div class="analyse-two-bottom-bottom-item-bottom-left">
+                  人数峰值4.7w
+                </div>
+                <div class="analyse-two-bottom-bottom-item-bottom-right">
+                  直播销量64.7w
+                </div>
               </div>
             </div>
           </div>
@@ -175,39 +207,67 @@
           <div class="analyse-four-bottom-bottom">
             <div class="analyse-four-bottom-bottom-item">
               <div class="analyse-four-bottom-bottom-item-left">
-                <div class="analyse-four-bottom-bottom-item-left-img">img</div>
+                <div class="analyse-four-bottom-bottom-item-left-img">
+                  <img
+                    style="width: 100%; height: 100%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="analyse-four-bottom-bottom-item-left-txt">
-                  <div class="analyse-four-bottom-bottom-item-left-txt-top">顶呱呱给我改价</div>
-                  <div class="analyse-four-bottom-bottom-item-left-txt-bottom">粉丝总数:2042</div>
+                  <div class="analyse-four-bottom-bottom-item-left-txt-top">
+                    顶呱呱给我改价
+                  </div>
+                  <div class="analyse-four-bottom-bottom-item-left-txt-bottom">
+                    粉丝总数:2042
+                  </div>
                 </div>
               </div>
               <div class="analyse-four-bottom-bottom-item-right">
                 <div class="analyse-four-bottom-bottom-item-right-item">
                   <div>0</div>
-                  <div class="analyse-four-bottom-bottom-item-right-item-style">关联视频</div>
+                  <div class="analyse-four-bottom-bottom-item-right-item-style">
+                    关联视频
+                  </div>
                 </div>
                 <div class="analyse-four-bottom-bottom-item-right-item">
                   <div>0</div>
-                  <div class="analyse-four-bottom-bottom-item-right-item-style">关联直播</div>
+                  <div class="analyse-four-bottom-bottom-item-right-item-style">
+                    关联直播
+                  </div>
                 </div>
               </div>
             </div>
             <div class="analyse-four-bottom-bottom-item">
               <div class="analyse-four-bottom-bottom-item-left">
-                <div class="analyse-four-bottom-bottom-item-left-img">img</div>
+                <div class="analyse-four-bottom-bottom-item-left-img">
+                  <img
+                    style="width: 100%; height: 100%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 <div class="analyse-four-bottom-bottom-item-left-txt">
-                  <div class="analyse-four-bottom-bottom-item-left-txt-top">顶呱呱给我改价</div>
-                  <div class="analyse-four-bottom-bottom-item-left-txt-bottom">粉丝总数:2042</div>
+                  <div class="analyse-four-bottom-bottom-item-left-txt-top">
+                    顶呱呱给我改价
+                  </div>
+                  <div class="analyse-four-bottom-bottom-item-left-txt-bottom">
+                    粉丝总数:2042
+                  </div>
                 </div>
               </div>
               <div class="analyse-four-bottom-bottom-item-right">
                 <div class="analyse-four-bottom-bottom-item-right-item">
                   <div>0</div>
-                  <div class="analyse-four-bottom-bottom-item-right-item-style">关联视频</div>
+                  <div class="analyse-four-bottom-bottom-item-right-item-style">
+                    关联视频
+                  </div>
                 </div>
                 <div class="analyse-four-bottom-bottom-item-right-item">
                   <div>0</div>
-                  <div class="analyse-four-bottom-bottom-item-right-item-style">关联直播</div>
+                  <div class="analyse-four-bottom-bottom-item-right-item-style">
+                    关联直播
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,7 +284,7 @@ import Search from "../components/Search";
 export default {
   components: {
     Tab,
-    Search
+    Search,
   },
   data() {
     return {
@@ -235,9 +295,17 @@ export default {
       content3: "搜索你要找的热门视频",
       content4: "搜索你要找的播主",
       //复选框
-      checked: true
+      checked: true,
+      nav: {
+        order_img: "",
+        order_money: "232价格",
+        order_title: "标题",
+        order_mum: "232",
+        order_views: "232",
+        order_sale: "232",
+      },
     };
-  }
+  },
 };
 </script>
 
@@ -301,7 +369,7 @@ export default {
       align-items: center;
       justify-content: center;
       width: 25%;
-      padding: 0.625rem;
+      padding: 0.625rem 0;
       &-top {
         color: green;
       }

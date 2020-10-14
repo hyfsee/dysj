@@ -3,25 +3,31 @@
     <!-- 播主详情 -->
     <div class="top">
       <div class="top-left">
-        <div class="top-left-img">img</div>
+        <div class="top-left-img">
+          <img
+            style="width: 100%; height: 100%; border-radius: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
         <div class="top-left-top">政务排行榜月榜</div>
-        <div class="top-left-center">第一名</div>
+        <div class="top-left-center">第{{ nav.user_ranking }}名</div>
         <div class="top-left-bottom"><van-icon name="star" />收藏</div>
       </div>
       <div class="top-right">
         <div class="top-right-top">
-          央视新闻
-          <div class="top-right-top-txt">政务</div>
+          {{ nav.user_name }}
+          <div class="top-right-top-txt">{{ nav.user_type }}</div>
         </div>
         <div class="top-right-center">
-          <div class="top-right-center-left">抖音ID:1354353213</div>
-          <div class="top-right-center-right">性别:未知</div>
+          <div class="top-right-center-left">抖音ID:{{ nav.user_id }}</div>
+          <div class="top-right-center-right">性别:{{ nav.user_sex }}</div>
         </div>
         <div class="top-right-center">
-          <div class="top-right-center-left">地区:北京</div>
+          <div class="top-right-center-left">地区:{{ nav.user_address }}</div>
           <div class="top-right-center-right">年龄:未知</div>
         </div>
-        <div class="top-right-bottom">简介:本宝宝暂时还没想到个性签名</div>
+        <div class="top-right-bottom">简介:{{ nav.user_desc }}</div>
       </div>
     </div>
 
@@ -89,7 +95,9 @@
     <!-- 趋势图 -->
     <div class="tendency">
       <Tab :tab="tab1" />
-      <div class="tendency-img">img</div>
+      <div class="tendency-img">
+        <img style="width: 100%; height: 100%" src="../assets/a1.jpg" alt="" />
+      </div>
     </div>
 
     <!-- 粉丝画像 -->
@@ -118,7 +126,13 @@
       <div class="analyse-top">直播分析</div>
       <div class="analyse-bottom">
         <div class="analyse-bottom-item">
-          <div class="analyse-bottom-item-left">img</div>
+          <div class="analyse-bottom-item-left">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+          </div>
           <div class="analyse-bottom-item-right">
             <div class="analyse-bottom-item-right-top">
               新闻1+1 假期后的疫情防控 如何继续
@@ -145,15 +159,33 @@
       <Tab :tab="tab3" />
       <div class="video-bottom">
         <router-link class="video-bottom-item" to="/videoParticulars">
-          <div class="video-bottom-item-top">img</div>
+          <div class="video-bottom-item-top">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+          </div>
           <div class="video-bottom-item-bottom">09月08日</div>
         </router-link>
         <router-link class="video-bottom-item" to="/videoParticulars">
-          <div class="video-bottom-item-top">img</div>
+          <div class="video-bottom-item-top">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+          </div>
           <div class="video-bottom-item-bottom">09月08日</div>
         </router-link>
         <router-link class="video-bottom-item" to="/videoParticulars">
-          <div class="video-bottom-item-top">img</div>
+          <div class="video-bottom-item-top">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+          </div>
           <div class="video-bottom-item-bottom">09月08日</div>
         </router-link>
       </div>
@@ -174,6 +206,23 @@ export default {
       tab3: ["最热", "最新"],
       //进度条数据
       currentRate: 0,
+      nav: {
+        user_img: require("../assets/a1.jpg"),
+        user_type: "吃",
+        user_id: 1,
+        user_ranking: 1,
+        user_address: "北京",
+        user_name: "小明",
+        user_sex: "女",
+        user_age: 18,
+        user_desc: "6666",
+        user_fans: 232,
+        user_addfans: 232,
+        user_like: 232,
+        user_addlike: 232,
+        user_video: 232,
+        user_addvideo: 232,
+      },
     };
   },
   computed: {

@@ -2,29 +2,36 @@
   <!-- 直播详情 -->
   <div>
     <div class="top">
-      <div class="top-left">img</div>
+      <div class="top-left">
+        <img
+          style="width: 100%; height: 100%; border-radius: 50%"
+          :src="nav.user_img"
+          alt=""
+        />
+      </div>
       <div class="top-right">
         <div class="top-right-top">
-          <div class="top-right-top-txt">阁主</div>
+          <div class="top-right-top-txt">{{ nav.user_name }}</div>
           <div>感谢大家的祝福</div>
         </div>
         <div class="top-right-bottom">
-          <div>抖音号:123456789</div>
-          <div>粉丝数:42.3w</div>
+          <div>抖音号:{{ nav.user_id }}</div>
+          <div>粉丝数:{{ nav.user_fans }}</div>
         </div>
       </div>
     </div>
     <div class="center">
-      <div class="center-left">img</div>
+      <div class="center-left">
+        <img style="width: 100%; height: 100%" :src="nav.online_img" alt="" />
+      </div>
       <div class="center-right">
-        <div class="center-right-txt">浮力专场10月7日婚礼</div>
-        <div class="center-right-span">开播时间:2020-10-10</div>
-        <div class="center-right-span">开播时长:17小时5分5秒</div>
-        <div class="center-right-span">平均停留:2小时5分52秒</div>
+        <div class="center-right-txt">{{ nav.online_title }}</div>
+        <div class="center-right-span">开播时间:{{ nav.create_time }}</div>
+        <div class="center-right-span">开播时长:{{ nav.online_time }}</div>
+        <div class="center-right-span">平均停留:--</div>
         <div class="center-right-span">
           直播分类:
-          <div class="center-right-span-style">珠宝配饰</div>
-          <div class="center-right-span-color">男装女装</div>
+          <div class="center-right-span-style">{{ nav.online_sort }}</div>
         </div>
       </div>
     </div>
@@ -32,15 +39,15 @@
       <div class="moods-top">人气数据</div>
       <div class="podacster">
         <div>
-          <div class="podacster-num">46.2w</div>
+          <div class="podacster-num">{{ nav.online_num }}</div>
           <div>观看人数</div>
         </div>
         <div>
-          <div class="podacster-num">13.0w</div>
+          <div class="podacster-num">{{ nav.online_max }}</div>
           <div>人数峰值</div>
         </div>
         <div>
-          <div class="podacster-num">7.5w</div>
+          <div class="podacster-num">--</div>
           <div>平均在线人数</div>
         </div>
       </div>
@@ -54,7 +61,13 @@
           </div>
           <div class="moods-bottom-top-right">总量</div>
         </div>
-        <div class="moods-bottom-bottom">img</div>
+        <div class="moods-bottom-bottom">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <Tab :tab="tab" />
@@ -62,12 +75,20 @@
       <div class="one-top">
         <div class="one-top-top">
           <div class="one-top-top-item">
-            <div>407.3w</div>
-            <div>销售额</div>
+            <div style="font-size: 0.875rem">{{ nav.online_num }}</div>
+            <div>观看人数</div>
           </div>
           <div class="one-top-top-item">
-            <div>407.3w</div>
-            <div>销售额</div>
+            <div style="font-size: 0.875rem">{{ nav.online_max }}</div>
+            <div>人气峰值</div>
+          </div>
+          <div class="one-top-top-item">
+            <div style="font-size: 0.875rem">--</div>
+            <div>平均在线</div>
+          </div>
+          <div class="one-top-top-item">
+            <div style="font-size: 0.875rem">{{ nav.online_yl }}</div>
+            <div>本场音浪</div>
           </div>
         </div>
         <div class="one-top-bottom">
@@ -79,21 +100,29 @@
         <div class="one-search-search">
           <Search :content="content" />
         </div>
-        <div class="one-search-item">
-          <van-icon name="filter-o" />筛选
-        </div>
+        <div class="one-search-item"><van-icon name="filter-o" />筛选</div>
       </div>
       <div class="one-bottom">
         <div class="one-bottom-item">
           <div class="one-bottom-item-top">
-            <div class="one-bottom-item-top-left">img</div>
+            <div class="one-bottom-item-top-left">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="one-bottom-item-top-right">
-              <div class="one-bottom-item-top-right-top">10.11直播商品231231</div>
-              <div class="one-bottom-item-top-right-center">
-                <div style="color:green">直播价:$238.00</div>
-                <div style="color:red">卷后价:$238.00</div>
+              <div class="one-bottom-item-top-right-top">
+                10.11直播商品231231
               </div>
-              <div class="one-bottom-item-top-right-bottom">上架时间:10-11 11:30:59</div>
+              <div class="one-bottom-item-top-right-center">
+                <div style="color: green">直播价:$238.00</div>
+                <div style="color: red">卷后价:$238.00</div>
+              </div>
+              <div class="one-bottom-item-top-right-bottom">
+                上架时间:10-11 11:30:59
+              </div>
             </div>
           </div>
           <div class="one-bottom-item-bottom">
@@ -103,14 +132,24 @@
         </div>
         <div class="one-bottom-item">
           <div class="one-bottom-item-top">
-            <div class="one-bottom-item-top-left">img</div>
+            <div class="one-bottom-item-top-left">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="one-bottom-item-top-right">
-              <div class="one-bottom-item-top-right-top">10.11直播商品231231</div>
-              <div class="one-bottom-item-top-right-center">
-                <div style="color:green">直播价:$238.00</div>
-                <div style="color:red">卷后价:$238.00</div>
+              <div class="one-bottom-item-top-right-top">
+                10.11直播商品231231
               </div>
-              <div class="one-bottom-item-top-right-bottom">上架时间:10-11 11:30:59</div>
+              <div class="one-bottom-item-top-right-center">
+                <div style="color: green">直播价:$238.00</div>
+                <div style="color: red">卷后价:$238.00</div>
+              </div>
+              <div class="one-bottom-item-top-right-bottom">
+                上架时间:10-11 11:30:59
+              </div>
             </div>
           </div>
           <div class="one-bottom-item-bottom">
@@ -140,7 +179,7 @@
           <div>新增粉丝2.7w</div>
           <div>粉丝转化率5.175</div>
         </div>
-        <div style="margin-top:0.625rem" class="two-center-top">
+        <div style="margin-top: 0.625rem" class="two-center-top">
           <div>本场点赞19.8w</div>
           <div>送礼人数7993</div>
         </div>
@@ -152,7 +191,13 @@
           <div class="two-cumulative-center-left">观看人数 人气峰值</div>
           <div class="two-cumulative-center-right">总量</div>
         </div>
-        <div class="two-cumulative-bottom">img</div>
+        <div class="two-cumulative-bottom">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
       </div>
       <div class="two-cumulative">
         <div class="two-cumulative-top">累计观看</div>
@@ -160,14 +205,26 @@
           <div class="two-cumulative-center-left">观看人数 人气峰值</div>
           <div class="two-cumulative-center-right">总量</div>
         </div>
-        <div class="two-cumulative-bottom">img</div>
+        <div class="two-cumulative-bottom">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <div class="three">
       <!-- 观众来源 -->
       <div class="three-source">
         <div class="three-source-top">观众来源</div>
-        <div class="three-source-bottom">img</div>
+        <div class="three-source-bottom">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
       </div>
       <!-- 观众性别 -->
       <div class="three-gender">
@@ -190,14 +247,30 @@ import Search from "../components/Search";
 export default {
   components: {
     Tab,
-    Search
+    Search,
   },
   data() {
     return {
       tab: ["带货数据", "人气数据", "观众画像", "观战互动"],
-      content: "输入商品关键词"
+      content: "输入商品关键词",
+      nav: {
+        user_img: require("../assets/a1.jpg"),
+        user_id: 1,
+        user_name: "阁主",
+        user_fans: "232粉丝数",
+        online_title: "浮力专场10月7日婚礼",
+        online_img: require("../assets/a1.jpg"),
+        create_time: "2020-10-2",
+        online_time: "30秒时长",
+        online_sort: "吃分类",
+        online_num: "232观看人数",
+        online_max: "232人数峰值",
+        online_addfans: "232新增粉丝",
+        online_addlink: "232点赞",
+        online_yl: "音浪",
+      },
     };
-  }
+  },
 };
 </script>
 
@@ -319,6 +392,7 @@ export default {
       display: flex;
       &-item {
         width: 25%;
+        font-size: 0.75rem;
       }
     }
     &-bottom {

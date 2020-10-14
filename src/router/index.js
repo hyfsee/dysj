@@ -62,14 +62,24 @@ const routes = [
             name: '我的'
         }
     },
-    //我的
+    //我的抖音号
     {
         path: '/MyRanking',
         component: () => import('@/views/MyRanking'),
         meta: {
             topIconShow: true,
             topShow: true,
-            name: '我的'
+            name: '我的抖音号'
+        }
+    },
+    //添加抖音号
+    {
+        path: '/myTrill',
+        component: () => import('@/views/myTrill'),
+        meta: {
+            topIconShow: true,
+            topShow: true,
+            name: '添加抖音号'
         }
     },
     //创意素材
@@ -130,6 +140,16 @@ const routes = [
             topIconShow: true,
             topShow: true,
             name: '搜索'
+        }
+    },
+    //搜索详情
+    {
+        path: '/searchParticulars',
+        component: () => import('@/views/searchParticulars'),
+        meta: {
+            topIconShow: true,
+            topShow: true,
+            name: '搜索结果'
         }
     },
     //直播详情
@@ -276,6 +296,14 @@ const routes = [
     {
         path: '/account',
         component: () => import('@/views/account'),
+        meta: {
+            topIconShow: true,
+            topShow: true,
+            name: '查看更多账号'
+        }
+    }, {
+        path: '/name',
+        component: () => import('@/views/name'),
         meta: {
             topIconShow: true,
             topShow: true,

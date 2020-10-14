@@ -15,8 +15,8 @@
       <div style="font-size: 0.75rem; color: #999; margin-top: 0.625rem">
         若在预约发布时间段内无发布,此次监控也视为完成,但是无监控报告
       </div>
-      <van-radio name="1">立即开始监控</van-radio>
-      <van-radio name="2">
+      <van-radio name="timestamp">立即开始监控</van-radio>
+      <van-radio name="times">
         <van-cell is-link @click="showPopup">请选择</van-cell>
         <van-popup
           round
@@ -47,12 +47,12 @@
       <van-radio-group
         icon-size="1rem"
         class="duration-item"
-        v-model="duration"
+        v-model="time_length"
         direction="horizontal"
       >
-        <van-radio name="1">6小时</van-radio>
-        <van-radio name="2">12小时</van-radio>
-        <van-radio name="3">24小时</van-radio>
+        <van-radio name="6h">6小时</van-radio>
+        <van-radio name="12h">12小时</van-radio>
+        <van-radio name="1day">24小时</van-radio>
       </van-radio-group>
     </div>
 
@@ -64,8 +64,8 @@
         v-model="result"
         direction="horizontal"
       >
-        <van-checkbox shape="square" name="more1">弹幕监控</van-checkbox>
-        <van-checkbox shape="square" name="more2"
+        <van-checkbox shape="square" name="barrage">弹幕监控</van-checkbox>
+        <van-checkbox shape="square" name="shopping"
           >正在购买人数监控</van-checkbox
         >
       </van-checkbox-group>
@@ -100,7 +100,7 @@ export default {
       //开播提示按钮
       checked: false,
       //监控时长
-      duration: "1",
+      time_length: "1",
       //更多数据
       result: [],
       show: false,

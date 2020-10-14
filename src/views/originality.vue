@@ -19,42 +19,30 @@
             <van-icon name="arrow-down" />
           </div>
         </div>
-        <div class="center-top-right">
-          <van-icon name="filter-o" />筛选
-        </div>
+        <div class="center-top-right"><van-icon name="filter-o" />筛选</div>
       </div>
-      <router-link to="/videoParticulars" class="podacster">
-        <div class="podacster-left">img</div>
-        <div class="podacster-right">
-          <div class="podacster-right-top">抖音发短视频就可以赚可以赚钱,认真钱,认真看完</div>
-          <div class="podacster-right-center">
-            <div class="podacster-right-center-left">
-              <div class="podacster-right-center-left-img">img</div>无就像
-            </div>
-            <div class="podacster-right-center-right">17小时前</div>
-          </div>
-          <div class="podacster-right-bottom">
-            <div>
-              <van-icon name="good-job-o" />52.5w
-            </div>
-            <div>
-              <van-icon name="more-o" />2.0w
-            </div>
-            <div>
-              <van-icon name="share-o" />11.3w
-            </div>
-          </div>
-        </div>
+      <router-link to="/videoParticulars">
+        <PodcasterClassifyImg :data="video" />
       </router-link>
     </div>
 
     <router-link to="/musicParticulars" class="music">
       <div class="music-item">
-        <div class="music-item-left">img</div>
+        <div class="music-item-left">
+          <img
+            style="width: 100%; height: 100%"
+            :src="music.music_img"
+            alt=""
+          />
+        </div>
         <div class="music-item-right">
-          <div class="music-item-right-top">不过人间</div>
-          <div class="music-item-right-center">时长:30秒</div>
-          <div class="music-item-right-bottom">参与人数:362.8w</div>
+          <div class="music-item-right-top">{{ music.music_name }}</div>
+          <div class="music-item-right-center">
+            时长:{{ music.music_length }}
+          </div>
+          <div class="music-item-right-bottom">
+            参与人数:{{ music.music_num }}
+          </div>
         </div>
       </div>
     </router-link>
@@ -62,21 +50,9 @@
     <div class="topic">
       <router-link to="/wordParticulars" class="topic-item">
         <div class="topic-item-left">
-          <van-icon name="orders-o" />我的生活日记
+          <van-icon name="orders-o" />{{ topic.title }}
         </div>
-        <div class="topic-item-right">525.0w参加</div>
-      </router-link>
-      <router-link to="/wordParticulars" class="topic-item">
-        <div class="topic-item-left">
-          <van-icon name="orders-o" />我的生活日记
-        </div>
-        <div class="topic-item-right">525.0w参加</div>
-      </router-link>
-      <router-link to="/wordParticulars" class="topic-item">
-        <div class="topic-item-left">
-          <van-icon name="orders-o" />我的生活日记
-        </div>
-        <div class="topic-item-right">525.0w参加</div>
+        <div class="topic-item-right">{{ topic.title_num }}参加</div>
       </router-link>
     </div>
   </div>
@@ -85,17 +61,39 @@
 <script>
 import Tab from "../components/Tab";
 import Search from "../components/Search";
+import PodcasterClassifyImg from "../components/PodcasterClassifyImg";
 export default {
   components: {
     Tab,
-    Search
+    Search,
+    PodcasterClassifyImg,
   },
   data() {
     return {
       tab: ["视频", "音乐", "话题"],
-      content: "输入你要找的热门视频吧"
+      content: "输入你要找的热门视频吧",
+      video: {
+        video_img: require("../assets/a1.jpg"),
+        video_name: "标题",
+        video_username: "用户名",
+        video_data: "发布时间",
+        video_like: "232点赞数",
+        video_share: "232分享数",
+        video_comment: "232评论数",
+      },
+      music: {
+        music_img: require("../assets/a1.jpg"),
+        music_name: "名称",
+        music_length: "30秒",
+        music_num: "232人数",
+      },
+      topic: {
+        title: "标题",
+        icon: "图标",
+        title_num: "232人数",
+      },
     };
-  }
+  },
 };
 </script>
 
@@ -119,60 +117,6 @@ export default {
     &-right {
       display: flex;
       align-items: center;
-    }
-  }
-}
-
-.podacster {
-  display: flex;
-  padding: 0.625rem;
-  background-color: #fff;
-  &-left {
-    width: 4rem;
-    height: 5rem;
-    background-color: red;
-    color: black;
-    margin-right: 0.625rem;
-  }
-  &-right {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    flex: 1;
-    &-top {
-      display: flex;
-      align-items: center;
-      text-align: left;
-    }
-    &-center {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      margin: 0.3125rem 0;
-      color: #777;
-      &-left {
-        display: flex;
-        align-items: center;
-        &-img {
-          width: 1.25rem;
-          height: 1.25rem;
-          border-radius: 1.25rem;
-          background-color: red;
-        }
-      }
-    }
-    &-bottom {
-      display: flex;
-      font-size: 0.75rem;
-      justify-content: space-between;
-      width: 80%;
-      div {
-        display: flex;
-        align-items: center;
-        .van-icon {
-          margin-right: 0.3125rem;
-        }
-      }
     }
   }
 }

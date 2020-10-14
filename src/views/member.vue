@@ -1,10 +1,14 @@
 <template>
   <div>
     <div class="top">
-      <div class="top-left">img</div>
+      <div class="top-left">
+        <img style="width: 100%; height: 100%" src="../assets/a1.jpg" alt="" />
+      </div>
       <div class="top-right">
         <div>名称</div>
-        <div style="font-size: 0.875rem">暂未开通,飞瓜会员和相关数据服务权益</div>
+        <div style="font-size: 0.875rem">
+          暂未开通,飞瓜会员和相关数据服务权益
+        </div>
       </div>
     </div>
     <Tab :tab="tab" />
@@ -45,7 +49,9 @@
       <div class="price-item">
         <div>12个月</div>
         <div style="font-size: 1.25rem; color: green">$2868</div>
-        <div style="text-decoration: line-through; font-size: 0.875rem">$4768</div>
+        <div style="text-decoration: line-through; font-size: 0.875rem">
+          $4768
+        </div>
         <div
           style="
             border: 0.0625rem solid #777;

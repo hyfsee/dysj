@@ -17,7 +17,13 @@
     <div class="center">
       <div class="center-item">
         <div class="center-item-left">
-          <div class="center-item-left-left">img</div>
+          <div class="center-item-left-left">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+          </div>
           <div class="center-item-left-right">
             <div class="center-item-left-right-top">
               guansda

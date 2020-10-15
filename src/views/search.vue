@@ -1,5 +1,5 @@
 <template>
-<!-- 搜索页面 -->
+  <!-- 搜索页面 -->
   <div>
     <div class="search">
       <div class="search-icon">
@@ -17,7 +17,7 @@
           name="cross"
         />
       </div>
-      <button class="search-btn">搜索</button>
+      <router-link to="/searchParticulars" class="search-btn">搜索</router-link>
     </div>
     <div class="history">
       <div class="history-top">
@@ -39,7 +39,13 @@
       <div class="nav-item">
         <div class="nav-item-left">
           <div class="nav-item-style">1</div>
-          <div class="nav-item-img">img</div>
+          <div class="nav-item-img">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+          </div>
           <div class="nav-item-txt">央视新闻</div>
         </div>
         <div class="nav-item-right">粉丝数:9733.1w</div>
@@ -163,7 +169,11 @@ export default {
     width: 3.125rem;
     background-color: orange;
     color: white;
-    line-height: 1.25rem;
+    display: flex;
+    height: 100%;
+    line-height: 100%;
+    justify-content: center;
+    align-items: center;
     border-radius: 0 1.25rem 1.25rem 0;
   }
 }

@@ -81,6 +81,10 @@ button {
 a {
   color: inherit;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
 .app {
   padding: 0 0.625rem;
   height: 3000px;

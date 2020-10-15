@@ -1,31 +1,32 @@
 <template>
   <div>
+    <!-- 小店 -->
     <div class="podacster">
       <div class="podacster-left">
         <img
           style="width: 100%; height: 100%; border-radius: 100%"
-          :src="data.user_img"
+          :src="data.store_img"
           alt=""
         />
       </div>
       <div class="podacster-right">
         <div class="podacster-right-top">
           <div class="podacster-right-top-list">1</div>
-          <div class="podacster-right-top-name">{{ data.user_name }}</div>
+          <div class="podacster-right-top-name">{{ data.store_name }}</div>
           <div class="podacster-right-top-color">生活</div>
         </div>
         <div class="podacster-right-bottom">
           <div class="num-left">
-            <div>{{ data.user_fans }}</div>
-            <div>粉丝数</div>
+            <div>{{ data.store_sale }}</div>
+            <div>销售量</div>
           </div>
           <div class="num-center">
-            <div>{{ data.uesr_link }}</div>
-            <div>粉丝数</div>
+            <div>{{ data.store_views }}</div>
+            <div>浏览量</div>
           </div>
           <div class="num-right">
-            <div>{{ data.user_video }}</div>
-            <div>粉丝数</div>
+            <div>{{ data.video_hot }}</div>
+            <div>热推商品</div>
           </div>
         </div>
       </div>

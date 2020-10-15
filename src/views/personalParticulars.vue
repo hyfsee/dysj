@@ -2,7 +2,13 @@
   <div>
     <div class="item">
       <div class="item-left">头像</div>
-      <div class="item-right">img</div>
+      <div class="item-right">
+        <img
+          style="width: 3.125rem; height: 3.125rem; border-radius: 1.5625rem"
+          src="../assets/a1.jpg"
+          alt=""
+        />
+      </div>
     </div>
     <div class="item">
       <div class="item-left">昵称</div>
@@ -29,9 +35,11 @@ export default {};
 
 <style scoped lang='less'>
 .item {
-  padding: 1.25rem 0;
   display: flex;
+  font-size: 0.875rem;
+  height: 3.75rem;
   justify-content: space-between;
   border-bottom: 0.0625rem solid #777;
+  align-items: center;
 }
 </style>

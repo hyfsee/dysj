@@ -14,6 +14,7 @@ export default {
     return {
       tab: ["商品", "播主", "视频", "音乐", "话题"],
     };
+    
   },
 };
 </script>

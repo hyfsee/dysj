@@ -33,20 +33,25 @@
       </div>
       <div class="listImg">
         <router-link class="listImg-item" to="/streaming">
-          <div class="listImg-item-top">img</div>
-          <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </router-link>
-        <router-link class="listImg-item" to="/streaming">
-          <div class="listImg-item-top">img</div>
-          <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </router-link>
-        <router-link class="listImg-item" to="/streaming">
-          <div class="listImg-item-top">img</div>
-          <div class="listImg-item-bottom">新人主播9.9专场</div>
-        </router-link>
-        <router-link class="listImg-item" to="/streaming">
-          <div class="listImg-item-top">img</div>
-          <div class="listImg-item-bottom">新人主播9.9专场</div>
+          <div class="listImg-item-top">
+            <img
+              style="width: 100%; height: 100%"
+              src="../assets/a1.jpg"
+              alt=""
+            />
+            <div class="listImg-item-top-style">
+              <div>直播</div>
+              <div>{{ streaming.online_num }}</div>
+            </div>
+            <div class="listImg-item-top-txt">
+              <img
+                style="height: 1.25rem; border-radius: 100%; width: 1.25rem"
+                :src="streaming.user_img"
+                alt=""
+              />{{ streaming.user_name }}
+            </div>
+          </div>
+          <div class="listImg-item-bottom">{{ streaming.online_title }}</div>
         </router-link>
       </div>
     </div>
@@ -61,7 +66,7 @@
         </router-link>
       </div>
       <div class="list-bottom">
-        <PodcasterClassify :data="industrial" />
+        <PodcasterClassifyCommodity :data="order" />
       </div>
     </div>
 
@@ -76,38 +81,53 @@
       </div>
       <div class="list-bottom">
         <div class="podacster">
-          <div class="podacster-left">img</div>
+          <div class="podacster-left">
+            <img
+              style="width: 100%; height: 100%"
+              :src="riseNav.user_img"
+              alt=""
+            />
+          </div>
           <div class="podacster-right">
             <div class="podacster-right-top">
               <div class="podacster-right-top-list">1</div>
               <van-icon class="podacster-right-top-icon" name="star" />
-              <div class="podacster-right-top-name">name</div>
-              <div class="podacster-right-top-color">生活</div>
+              <div class="podacster-right-top-name">
+                {{ riseNav.user_name }}
+              </div>
+              <div class="podacster-right-top-color">
+                {{ riseNav.user_type }}
+              </div>
             </div>
             <div class="podacster-right-bottom">
               <div class="num">
-                <div>fans</div>
+                <div>{{ riseNav.user_fans }}</div>
                 <div style="color: red; display: flex">
                   <van-icon
                     style="margin-right: 0.1875rem; font-size: 0.875rem"
                     name="back-top"
-                  />232.2w
+                  />{{ riseNav.user_addfans }}
                 </div>
                 <div>粉丝数</div>
               </div>
               <div class="num">
-                <div>praise</div>
+                <div>{{ riseNav.user_like }}</div>
                 <div style="color: red; display: flex">
                   <van-icon
                     style="margin-right: 0.1875rem; font-size: 0.875rem"
                     name="back-top"
-                  />232.2w
+                  />{{ riseNav.user_addlike }}
                 </div>
-                <div>粉丝数</div>
+                <div>点赞数</div>
               </div>
               <div class="num">
-                <div>exponent</div>
-                <div>--</div>
+                <div>{{ riseNav.user_video }}</div>
+                <div style="color: red; display: flex">
+                  <van-icon
+                    style="margin-right: 0.1875rem; font-size: 0.875rem"
+                    name="back-top"
+                  />{{ riseNav.user_addvideo }}
+                </div>
                 <div>粉丝数</div>
               </div>
             </div>
@@ -129,19 +149,43 @@
         </div>
         <div class="listImg">
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link class="listImg-item" to="/originality">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
         </div>
@@ -156,19 +200,43 @@
         </div>
         <div class="listImg">
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />g
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
           <router-link to="/originality" class="listImg-item">
-            <div class="listImg-item-top" style="height: 6.25rem">img</div>
+            <div class="listImg-item-top" style="height: 6.25rem">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/a1.jpg"
+                alt=""
+              />
+            </div>
             <div class="listImg-item-bottom">新人主播9.9专场</div>
           </router-link>
         </div>
@@ -188,7 +256,10 @@
             </div>
             <div class="listTxt-item-bottom">
               <van-icon name="play-circle-o" />13224.5亿
-              <van-icon name="user-circle-o" style="margin-left: 0.5rem" />7738.5w
+              <van-icon
+                name="user-circle-o"
+                style="margin-left: 0.5rem"
+              />7738.5w
             </div>
           </router-link>
           <router-link to="wordParticulars" class="listTxt-item">
@@ -197,7 +268,10 @@
             </div>
             <div class="listTxt-item-bottom">
               <van-icon name="play-circle-o" />13224.5亿
-              <van-icon name="user-circle-o" style="margin-left: 0.5rem" />7738.5w
+              <van-icon
+                name="user-circle-o"
+                style="margin-left: 0.5rem"
+              />7738.5w
             </div>
           </router-link>
         </div>
@@ -207,11 +281,11 @@
 </template>
 <script>
 import Search from "../components/Search";
-import PodcasterClassify from "../components/PodcasterClassify";
+import PodcasterClassifyCommodity from "../components/PodcasterClassifyCommodity";
 export default {
   components: {
     Search,
-    PodcasterClassify,
+    PodcasterClassifyCommodity,
   },
   data() {
     return {
@@ -258,12 +332,31 @@ export default {
       ],
       content: "搜索的达人或抖音号或商品",
       //热销商品榜
-      industrial: {
-        name: "浣语",
-        img: "img",
-        fans: "22.4w",
-        praise: "114.3w",
-        exponent: "1666.4",
+      order: {
+        order_img: require("../assets/a1.jpg"),
+        order_name: "商品名称",
+        order_sale: "232销量",
+        order_views: "232浏览量",
+        order_zh: "232转换率",
+      },
+      //热门直播
+      streaming: {
+        online_num: "232人数",
+        user_img: require("../assets/a1.jpg"),
+        user_name: "用户名称",
+        online_title: "直播间名称",
+      },
+      //主播涨粉榜
+      riseNav: {
+        user_img: require("../assets/a1.jpg"),
+        user_name: "爱唱歌",
+        user_type: "搞笑",
+        user_fans: "232",
+        user_addfans: "232",
+        user_like: "232",
+        user_addlike: "232",
+        user_video: "232",
+        user_addvideo: "232",
       },
     };
   },
@@ -277,8 +370,7 @@ export default {
       });
     },
   },
-  mounted() {
-  },
+  mounted() {},
 };
 </script>
 
@@ -399,9 +491,26 @@ export default {
       flex: 0 0 28%;
       margin-right: 0.625rem;
       &-top {
-        height: 9.375rem;
-        background-color: #fff;
+        height: 8.125rem;
         color: black;
+        position: relative;
+        font-size: 0.75rem;
+        &-style {
+          display: flex;
+          width: 90%;
+          left: 0.25rem;
+          justify-content: space-between;
+          color: white;
+          position: absolute;
+          top: 0.625rem;
+        }
+        &-txt {
+          display: flex;
+          width: 100%;
+          position: absolute;
+          bottom: 0.625rem;
+          align-items: center;
+        }
       }
       &-bottom {
         font-size: 0.75rem;

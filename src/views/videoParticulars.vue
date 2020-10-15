@@ -3,14 +3,26 @@
   <div>
     <div class="nav">
       <div class="nav-top">
-        <div class="nav-top-left">img</div>
+        <div class="nav-top-left">
+          <img
+            style="width: 100%; height: 100%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
         <div class="nav-top-right">
           <div class="nav-top-right-top">
             最高礼遇,迎'战役'英雄!最高礼遇,迎'战役'英雄最高礼遇
           </div>
           <div class="nav-top-right-center">
             <div class="nav-top-right-center-left">
-              <div class="nav-top-right-center-left-img">img</div>
+              <div class="nav-top-right-center-left-img">
+                <img
+                  style="width: 100%; border-radius: 50%; height: 100%"
+                  src="../assets/a1.jpg"
+                  alt=""
+                />
+              </div>
               央视新闻
             </div>
             <div class="nav-top-right-center-right">09月08日</div>
@@ -30,7 +42,13 @@
 
     <router-link to="/podcastParticulars">
       <div class="logoNav">
-        <div class="logoNav-left">img</div>
+        <div class="logoNav-left">
+          <img
+            style="width: 100%; height: 100%; border-radius: 50%"
+            src="../assets/a1.jpg"
+            alt=""
+          />
+        </div>
         <div class="logoNav-center">
           <div class="logoNav-center-top">央视新闻</div>
           <div class="logoNav-center-bottom">
@@ -62,7 +80,13 @@
           <div class="comment-bottom-bottom-item">
             <div class="comment-bottom-bottom-item-top">
               <div class="comment-bottom-bottom-item-top-left">
-                <div class="comment-bottom-bottom-item-top-left-img">img</div>
+                <div class="comment-bottom-bottom-item-top-left-img">
+                  <img
+                    style="width: 100%; height: 100%; border-radius: 50%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 筠连融媒
               </div>
               <div class="comment-bottom-bottom-item-top-right">
@@ -79,7 +103,13 @@
           <div class="comment-bottom-bottom-item">
             <div class="comment-bottom-bottom-item-top">
               <div class="comment-bottom-bottom-item-top-left">
-                <div class="comment-bottom-bottom-item-top-left-img">img</div>
+                <div class="comment-bottom-bottom-item-top-left-img">
+                  <img
+                    style="width: 100%; height: 100%; border-radius: 50%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 筠连融媒
               </div>
               <div class="comment-bottom-bottom-item-top-right">
@@ -96,7 +126,13 @@
           <div class="comment-bottom-bottom-item">
             <div class="comment-bottom-bottom-item-top">
               <div class="comment-bottom-bottom-item-top-left">
-                <div class="comment-bottom-bottom-item-top-left-img">img</div>
+                <div class="comment-bottom-bottom-item-top-left-img">
+                  <img
+                    style="width: 100%; height: 100%; border-radius: 50%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 筠连融媒
               </div>
               <div class="comment-bottom-bottom-item-top-right">
@@ -113,7 +149,13 @@
           <div class="comment-bottom-bottom-item">
             <div class="comment-bottom-bottom-item-top">
               <div class="comment-bottom-bottom-item-top-left">
-                <div class="comment-bottom-bottom-item-top-left-img">img</div>
+                <div class="comment-bottom-bottom-item-top-left-img">
+                  <img
+                    style="width: 100%; height: 100%; border-radius: 50%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 筠连融媒
               </div>
               <div class="comment-bottom-bottom-item-top-right">
@@ -130,7 +172,13 @@
           <div class="comment-bottom-bottom-item">
             <div class="comment-bottom-bottom-item-top">
               <div class="comment-bottom-bottom-item-top-left">
-                <div class="comment-bottom-bottom-item-top-left-img">img</div>
+                <div class="comment-bottom-bottom-item-top-left-img">
+                  <img
+                    style="width: 100%; height: 100%; border-radius: 50%"
+                    src="../assets/a1.jpg"
+                    alt=""
+                  />
+                </div>
                 筠连融媒
               </div>
               <div class="comment-bottom-bottom-item-top-right">

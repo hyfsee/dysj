@@ -3,10 +3,10 @@
     <div class="top">我的账户</div>
     <div class="center">
       <div class="center-top">
-        <div class="center-top-item">
+        <router-link to="/myTrill" class="center-top-item">
           <van-icon name="add-o" size="3rem" />
           <div>添加账号</div>
-        </div>
+        </router-link>
       </div>
       <router-link to="/account" class="center-bottom">查看更多</router-link>
     </div>
@@ -42,6 +42,8 @@ export default {
     &-item {
       width: 25%;
       font-size: 0.875rem;
+      display: flex;
+      flex-direction: column;
     }
   }
   &-bottom {

@@ -3,9 +3,7 @@ import App from './App.vue'
 import Vant from 'vant'
 import 'vant/lib/index.css';
 import store from './store';
-import chartjs from 'vue-chartjs';
 
-Vue.use(chartjs)
 Vue.use(Vant)
 
 import VueRouter from 'vue-router'
